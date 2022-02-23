@@ -1,14 +1,17 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
+import { useSelector } from "react-redux"
 import { Header } from "../components"
 
 
 function ContactsPage () {
 
+    const language = useSelector(({ language }) => language.language)
+
     return (
         <div>
             <Helmet>
-                <title>Контакты | C-BLOCK</title>
+                <title>{text.title[language]}</title>
             </Helmet>
             <Header activeIndex={5}/>
         </div>
@@ -16,3 +19,10 @@ function ContactsPage () {
 }
 
 export default ContactsPage;
+
+const text = {
+    title: {
+        ru: "Контакты | C-BLOCK",
+        lv: "Kontakti | C-BLOCK"
+    }
+}

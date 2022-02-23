@@ -1,14 +1,17 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
+import { useSelector } from "react-redux"
 import { Header } from "../components"
 
 
 function HomePage () {
 
+    const language = useSelector(({ language }) => language.language)
+
     return (
         <div>
             <Helmet>
-                <title>Главная | C-BLOCK</title>
+                <title>{text.title[language]}</title>
             </Helmet>
             <Header activeIndex={0}/>
         </div>
@@ -16,3 +19,10 @@ function HomePage () {
 }
 
 export default HomePage;
+
+const text = {
+    title: {
+        ru: "Главная | C-BLOCK",
+        lv: "Sākums | C-BLOCK"
+    }
+}
