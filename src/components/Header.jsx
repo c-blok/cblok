@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { setLanguage } from '../redux/actions/language';
@@ -23,10 +23,6 @@ export const Header = ({ activeIndex }) => {
     const changeLanguage = (language) => {
         dispatch(setLanguage(language))
     }
-
-    useEffect(() => {
-        console.log(language)
-    })
 
     return (
         <header>
