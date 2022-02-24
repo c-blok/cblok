@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Header } from "../components"
+import { Header, Footer } from "../components"
 
 
 function ForFlatPage () {
@@ -14,6 +14,7 @@ function ForFlatPage () {
                 <title>{text.title[language]}</title>
             </Helmet>
             <Header activeIndex={3}/>
+            <Footer/>
         </div>
     )
 }

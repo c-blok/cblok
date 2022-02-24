@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { setLanguage } from '../redux/actions/language';
 
 import logo from "../assets/svg/logo.svg"
 import phone from "../assets/images/phone.png"
-//TODO сделать нормальнные ссылки в навигации
+
 export const Header = ({ activeIndex }) => {
 
     const dispatch = useDispatch()
@@ -13,8 +13,11 @@ export const Header = ({ activeIndex }) => {
 
     const [activeItem, setActiveItem] = useState(activeIndex)
 
-    const onSelectedItem = (index) => {
-        setActiveItem(index);
+    const navigate = useNavigate()
+
+    const onSelectedItem = (index, page) => {
+        setActiveItem(index)
+        navigate(page)
     }
 
     const changeLanguage = (language) => {
@@ -59,22 +62,22 @@ export const Header = ({ activeIndex }) => {
                 </div>
                 <div className="nav">
                     <ul>
-                        <li className={activeItem === 0 ? 'active' : ''} onClick={() => onSelectedItem(0)}>
+                        <li className={activeItem === 0 ? 'active' : ''} onClick={() => onSelectedItem(0, '/')}>
                             <Link to="/">{text.home[language]}</Link>
                         </li>
-                        <li className={activeItem === 1 ? 'active' : ''} onClick={() => onSelectedItem(1)}>
+                        <li className={activeItem === 1 ? 'active' : ''} onClick={() => onSelectedItem(1, '/services')}>
                             <Link to="/services">{text.services[language]}</Link>
                         </li>
-                        <li className={activeItem === 2 ? 'active' : ''} onClick={() => onSelectedItem(2)}>
+                        <li className={activeItem === 2 ? 'active' : ''} onClick={() => onSelectedItem(2, '/forhome')}>
                             <Link to="/forhome">{text.forHome[language]}</Link>
                         </li>
-                        <li className={activeItem === 3 ? 'active' : ''} onClick={() => onSelectedItem(3)}>
+                        <li className={activeItem === 3 ? 'active' : ''} onClick={() => onSelectedItem(3, '/forflat')}>
                             <Link to="/forflat">{text.forFlat[language]}</Link>
                         </li>
-                        <li className={activeItem === 4 ? 'active' : ''} onClick={() => onSelectedItem(4)}>
+                        <li className={activeItem === 4 ? 'active' : ''} onClick={() => onSelectedItem(4, '/projects')}>
                             <Link to="/projects">{text.projects[language]}</Link>
                         </li>
-                        <li className={activeItem === 5 ? 'active' : ''} onClick={() => onSelectedItem(5)}>
+                        <li className={activeItem === 5 ? 'active' : ''} onClick={() => onSelectedItem(5, '/contacts')}>
                             <Link to="/contacts">{text.contacts[language]}</Link>
                         </li>
                         <div className="language">

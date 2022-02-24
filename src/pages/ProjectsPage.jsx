@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Header } from "../components"
+import { Header, Footer } from "../components"
 
 
 function ProjectsPage () {
@@ -14,6 +14,7 @@ function ProjectsPage () {
                 <title>{text.title[language]}</title>
             </Helmet>
             <Header activeIndex={4}/>
+            <Footer/>
         </div>
     )
 }
