@@ -1,7 +1,7 @@
 const initialState = {
-    language: navigator.language === "ru-RU" || navigator.userLanguage === "ru-RU" ? "ru" : "lv"
+    language: localStorage.getItem('redux-store') ? JSON.parse(localStorage.getItem('redux-store')).language.language : navigator.language === "ru-RU" || navigator.userLanguage === "ru-RU" ? "ru" : "lv"
 }
-//TODO сделать сохранение языка в памяти
+
 const language = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_LANGUAGE':
