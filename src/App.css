@@ -531,8 +531,23 @@ footer {
     padding-left: 10%;
     border-left: 2px solid white;
 }
+.links a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links a:hover {
+    background-color: #9bd6fd;
+}
 .links img {
     width: 50px;
+}
+.partner .partnerLogo img {
+    width: 150px;
 }
 
 @media screen and (max-width: 1000px)  {
@@ -540,6 +555,10 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+    }
+    .partner .partnerLogo img {
+        margin-top: 20px;
+        width: 100px;
     }
 }
 @media screen and (max-width: 850px)  {

@@ -25,8 +25,8 @@ export const Footer = () => {
                         <p>{text.partnerP[language]}</p>
                         <Link to="dilluso.lv">dilluso.lv</Link>
                     </div>
-                    <div className="image">
-                        <img src={dilluso} width="150" height="150" alt="error"/>
+                    <div className="partnerLogo">
+                        <img src={dilluso} alt="error"/>
                     </div>
                 </div>
                 <div className="links">
