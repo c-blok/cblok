@@ -135,8 +135,8 @@ const text = {
         lv: "Jūsu dzīvoklim"
     },
     projects: {
-        ru: "Проекты",
-        lv: "Projekti"
+        ru: "Завершённые проекты",
+        lv: "Pabeigtie projekti"
     },
     contacts: {
         ru: "Контакты",
