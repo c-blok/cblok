@@ -41,7 +41,7 @@ export const Header = ({ activeIndex }) => {
                         <div className="contacts">
                             <div className="telephone">
                                 <p>{text.telephone[language]}</p>
-                                <a href="tel:25644344">+371 25644344</a>
+                                <a href="tel:+37125644344">+371 25644344</a>
                             </div>
                             <div className="email">
                                 <p>{text.email[language]}</p>
