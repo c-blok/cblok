@@ -656,6 +656,81 @@ footer {
     }
 }
 
+.contact_form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.contact_form .input {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.contact_form .input.fullLine {
+    width: 100%;
+}
+.contact_form .input.bigArea textarea {
+    padding: 15px;
+    height: 80px;
+    resize: vertical;
+    max-height: 500px;
+    min-height: 80px;
+}
+.contact_form .input input, .contact_form .input textarea {
+    height: 40px;
+    border-radius: 6px;
+    border-width: 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.contact_form .input input:focus, .contact_form .input textarea:focus {
+    border: 1px solid black;
+}
+.contact_form .input label {
+    color: rgba(0,0,0,1);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.contact_form .input button {
+    width: 30%;
+    margin: 30px auto auto;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 30px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0);
+}
+.contact_form .input button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+.contact_form .input button:focus {
+    color: white;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 800px) {
+    .contact_form {
+        flex-direction: column;
+    }
+    .contact_form .input {
+        width: 100%;
+    }
+    .contact_form .input button {
+        width: 50%;
+        padding: 7px 30px;
+        font-size: 15px;
+    }
+}
+
 /*
     DECORATION
  */
@@ -666,4 +741,36 @@ footer {
 
 .padBot15 {
     padding-bottom: 15px;
+}
+
+.marginTop30 {
+    margin-top: 10px !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.loader {
+    border: 4px solid #9bd6fd; /* Light grey */
+    border-top: 4px solid black; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.errorButton {
+    border: 1px solid red !important;
+    color: red !important;
+}
+
+.successButton {
+    border: 1px solid green !important;
+    color: green !important;
 }

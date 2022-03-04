@@ -1,18 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { Header, Footer } from "../components"
+import emailjs from "@emailjs/browser"
 
 import inst from "../assets/images/inst.png";
 import fb from "../assets/images/fb.png";
 import tt from "../assets/images/tiktok.png";
 
 
+const USER_ID = process.env["REACT_APP_EMAILJS_USERID"]             //userID
+const TEMPLATE_ID = process.env["REACT_APP_EMAILJS_TEMPLATEID"]     //templateID
+
 function ContactsPage () {
 
+    const form = useRef();
+
     const language = useSelector(({ language }) => language.language)
+
     const [mapLoading, setMapLoading] = useState(true)
+    const [mailLoading, setMailLoading] = useState(false)
+    const [mailSendSuccess, setMailSendSuccess] = useState(false)
+    const [mailSendError, setMailSendError] = useState(false)
+    const [mailSendButtonCSS, setMailSendButtonCSS] = useState('')
+
+    const [name, setName] = useState('')
+    const [telephone, setTelephone] = useState('')
+    const [email, setEmail] = useState('')
+    const [title, setTitle] = useState('')
+    const [message, setMessage] = useState('')
+
+    const onSubmit = (event) => {
+        event.preventDefault()
+        setMailSendButtonCSS('')
+        setMailSendSuccess(false)
+        setMailSendError(false)
+        setMailLoading(true)
+        emailjs.send(`service_wyh5pjb`, TEMPLATE_ID, {
+            name, telephone, email, title, message
+        }, USER_ID)
+            .then(() => {
+                    setMailSendButtonCSS('successButton')
+                    setMailSendSuccess(true)
+                    setMailLoading(false)
+                },
+                () => {
+                    setMailSendButtonCSS('errorButton')
+                    setMailSendError(true)
+                    setMailLoading(false)
+                });
+    }
 
     return (
         <div>
@@ -69,6 +107,46 @@ function ContactsPage () {
                         title="map"
                     />
                 </section>
+                <section className="column title marginTop30">
+                    <h1 className="center">{text.sendMessage[language]}</h1>
+                    <form onSubmit={onSubmit} className="contact_form" ref={form}>
+                        <div className="input">
+                            <label htmlFor="name">{text.name[language]}</label>
+                            <input type="text" id="name" autoComplete="off" onChange={e => setName(e.target.value)} required={true}/>
+                        </div>
+                        <div className="input">
+                            <label htmlFor="tel">{text.tel[language]}</label>
+                            <input type="tel" id="tel" autoComplete="off" onChange={e => setTelephone(e.target.value)} required={true}/>
+                        </div>
+                        <div className="input">
+                            <label htmlFor="email">{text.email[language]}</label>
+                            <input type="email" id="email" autoComplete="off" onChange={e => setEmail(e.target.value)} required={true}/>
+                        </div>
+                        <div className="input">
+                            <label htmlFor="title">{text.subject[language]}</label>
+                            <input type="text" id="title" autoComplete="off" onChange={e => setTitle(e.target.value)} required={true}/>
+                        </div>
+                        <div className="input fullLine bigArea">
+                            <label htmlFor="text">{text.text[language]}</label>
+                            <textarea id="text" autoComplete="off" onChange={e => setMessage(e.target.value)} required={true}/>
+                        </div>
+                        <div className="input fullLine">
+                            <button className={mailSendButtonCSS}>
+                                {mailLoading ?
+                                    <div className="loader"/>
+                                :
+                                    mailSendSuccess ?
+                                        text.sendSuccess[language]
+                                    :
+                                        mailSendError ?
+                                            text.sendError[language]
+                                        :
+                                            text.send[language]
+                                }
+                            </button>
+                        </div>
+                    </form>
+                </section>
             </div>
             <Footer/>
         </div>
@@ -95,7 +173,43 @@ const text = {
         lv: "Juridiskā adrese: Ganību dambis 22d, Rīga, Latvija, LV-1045"
     },
     realAddress: {
-        ru: "Фактический адрес: Ganību dambis 22d, Rīga, Latvija, LV-1045",
+        ru: "Фактический адрес: Ganību dambis 22d, Rīga, LV-1045",
         lv: "Faktiskā adrese: Ganību dambis 22d, Rīga, Latvija, LV-1045"
     },
+    sendMessage: {
+        ru: "Послать сообщение",
+        lv: "Nosūtīt ziņu"
+    },
+    name: {
+        ru: "Имя",
+        lv: "Vārds"
+    },
+    tel: {
+        ru: "Телефон",
+        lv: "Telefons"
+    },
+    email: {
+        ru: "Электронная почта",
+        lv: "E-pasts"
+    },
+    subject: {
+        ru: "Тема",
+        lv: "Temats"
+    },
+    text: {
+        ru: "Сообщение",
+        lv: "Ziņa"
+    },
+    send: {
+        ru: "ОТПРАВИТЬ",
+        lv: "SŪTĪT"
+    },
+    sendSuccess: {
+        ru: "ОТПРАВЛЕННО",
+        lv: "NOSŪTĪTS"
+    },
+    sendError: {
+        ru: "ОШИБКА",
+        lv: "KĻŪDA"
+    }
 }
