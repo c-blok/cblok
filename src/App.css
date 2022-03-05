@@ -774,3 +774,7 @@ footer {
     border: 1px solid green !important;
     color: green !important;
 }
+
+.disabled:hover {
+    cursor: not-allowed !important;
+}

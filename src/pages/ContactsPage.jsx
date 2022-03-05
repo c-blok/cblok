@@ -23,7 +23,6 @@ function ContactsPage () {
     const [mailLoading, setMailLoading] = useState(false)
     const [mailSendSuccess, setMailSendSuccess] = useState(false)
     const [mailSendError, setMailSendError] = useState(false)
-    const [mailSendButtonCSS, setMailSendButtonCSS] = useState('')
 
     const [name, setName] = useState('')
     const [telephone, setTelephone] = useState('')
@@ -33,22 +32,33 @@ function ContactsPage () {
 
     const onSubmit = (event) => {
         event.preventDefault()
-        setMailSendButtonCSS('')
+
+        if (mailSendSuccess)
+            return
+
+        document.getElementById('submit_button').className = ''
         setMailSendSuccess(false)
         setMailSendError(false)
         setMailLoading(true)
-        emailjs.send(`service_wyh5pjb`, TEMPLATE_ID, {
+        emailjs.send(`service_wyh5pj`, TEMPLATE_ID, {
             name, telephone, email, title, message
         }, USER_ID)
             .then(() => {
-                    setMailSendButtonCSS('successButton')
                     setMailSendSuccess(true)
                     setMailLoading(false)
+                    document.getElementById('submit_button').classList.add('successButton')
+                    document.getElementById('submit_button').classList.add('disabled')
+                    Array.from(document.querySelectorAll("input")).forEach(
+                        input => (input.value = "")
+                    );
+                    Array.from(document.querySelectorAll("textarea")).forEach(
+                        textarea => (textarea.value = "")
+                    );
                 },
                 () => {
-                    setMailSendButtonCSS('errorButton')
                     setMailSendError(true)
                     setMailLoading(false)
+                    document.getElementById('submit_button').classList.add('errorButton')
                 });
     }
 
@@ -131,7 +141,7 @@ function ContactsPage () {
                             <textarea id="text" autoComplete="off" onChange={e => setMessage(e.target.value)} required={true}/>
                         </div>
                         <div className="input fullLine">
-                            <button className={mailSendButtonCSS}>
+                            <button id="submit_button">
                                 {mailLoading ?
                                     <div className="loader"/>
                                 :
