@@ -12,6 +12,7 @@ export const Header = ({ activeIndex }) => {
     const language = useSelector(({ language }) => language.language)
 
     const [activeItem, setActiveItem] = useState(activeIndex)
+    const [mobileNav, setMobileNav] = useState(false)
 
     const navigate = useNavigate()
 
@@ -50,10 +51,12 @@ export const Header = ({ activeIndex }) => {
                         </div>
                         <img src={phone} alt="error"/>
                     </div>
-                    <div className="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div className="burger" onClick={() => setMobileNav(true)}>
+                        <div className="burger_button">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
                 <div className="nav">
@@ -94,6 +97,51 @@ export const Header = ({ activeIndex }) => {
                     </ul>
                 </div>
             </div>
+            {mobileNav &&
+                <>
+                    <div className="bg_overlay"></div>
+                    <div className="mobile_nav">
+                        <div className="close" onClick={() => setMobileNav(false)}/>
+                        <div className="navigation">
+                            <ul>
+                                <li className={activeItem === 0 ? 'active' : ''} onClick={() => onSelectedItem(0, '/')}>
+                                    <Link to="/">{text.home[language]}</Link>
+                                </li>
+                                <li className={activeItem === 1 ? 'active' : ''} onClick={() => onSelectedItem(1, '/services')}>
+                                    <Link to="/services">{text.services[language]}</Link>
+                                </li>
+                                <li className={activeItem === 2 ? 'active' : ''} onClick={() => onSelectedItem(2, '/forhome')}>
+                                    <Link to="/forhome">{text.forHome[language]}</Link>
+                                </li>
+                                <li className={activeItem === 3 ? 'active' : ''} onClick={() => onSelectedItem(3, '/forflat')}>
+                                    <Link to="/forflat">{text.forFlat[language]}</Link>
+                                </li>
+                                <li className={activeItem === 4 ? 'active' : ''} onClick={() => onSelectedItem(4, '/projects')}>
+                                    <Link to="/projects">{text.projects[language]}</Link>
+                                </li>
+                                <li className={activeItem === 5 ? 'active' : ''} onClick={() => onSelectedItem(5, '/contacts')}>
+                                    <Link to="/contacts">{text.contacts[language]}</Link>
+                                </li>
+                                <div className="language">
+                                    {language === "ru" ?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("lv")}>
+                                            <path fill="#9E3039" d="m0,0h40v10H0"/>
+                                            <path fill="#FFF" d="m0,10h40v10H0"/>
+                                            <path fill="#9E3039" d="m0,20h40v10H0"/>
+                                        </svg>
+                                        :
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("ru")}>
+                                            <path fill="#FFFFFF" d="m0,0h40v10H0"/>
+                                            <path fill="#018DE9" d="m0,10h40v10H0"/>
+                                            <path fill="#DB0D20" d="m0,20h40v10H0"/>
+                                        </svg>
+                                    }
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </>
+            }
         </header>
     )
 }

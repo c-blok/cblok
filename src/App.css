@@ -205,10 +205,10 @@ header {
 .burger {
     display: none;
 }
-.burger:hover {
+.burger .burger_button:hover {
     cursor: pointer;
 }
-.burger div {
+.burger .burger_button div {
     width: 35px;
     height: 5px;
     background-color: black;
@@ -331,6 +331,72 @@ header {
         font-size: 11px;
     }
 }
+
+.bg_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.mobile_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #61c0ff;
+    box-shadow: 0 0 20px black;
+    z-index: 3;
+    min-height: 400px;
+}
+
+.navigation {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.navigation li {
+    margin: 13px 0;
+    padding-bottom: 5px;
+}
+.navigation li.active {
+    border-bottom: 1px solid white;
+}
+
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 50px;
+    height: 50px;
+}
+.close:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 23px;
+    content: ' ';
+    height: 53px;
+    width: 2px;
+    background-color: white;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
 
 .main_wrapper {
     width: 80%;
