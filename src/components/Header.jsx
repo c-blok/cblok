@@ -51,8 +51,8 @@ export const Header = ({ activeIndex }) => {
                         </div>
                         <img src={phone} alt="error"/>
                     </div>
-                    <div className="burger" onClick={() => setMobileNav(true)}>
-                        <div className="burger_button">
+                    <div className="burger">
+                        <div className="burger_button" onClick={() => setMobileNav(true)}>
                             <div></div>
                             <div></div>
                             <div></div>

@@ -40,7 +40,7 @@ function ContactsPage () {
         setMailSendSuccess(false)
         setMailSendError(false)
         setMailLoading(true)
-        emailjs.send(`service_wyh5pj`, TEMPLATE_ID, {
+        emailjs.send(`service_wyh5pjb`, TEMPLATE_ID, {
             name, telephone, email, title, message
         }, USER_ID)
             .then(() => {

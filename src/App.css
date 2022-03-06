@@ -290,7 +290,7 @@ header {
         display: none;
     }
     .main_block {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 220px);
     }
     .burger {
         display: flex;
@@ -527,6 +527,7 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
+        text-align: center;
     }
 }
 @media screen and (max-width: 680px)  {
@@ -791,9 +792,9 @@ footer {
         width: 100%;
     }
     .contact_form .input button {
-        width: 50%;
+        width: 80%;
         padding: 7px 30px;
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
