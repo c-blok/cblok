@@ -73,11 +73,8 @@ function ContactsPage () {
                     <h1>{text.contact[language]}</h1>
                     <div className="contact_">
                         <div className="contact_info">
-                            <p className="urgent">
-                                <a href="tel:+37125644344">+371 25644344</a>
-                            </p>
                             <p className="urgent padBot15">
-                                <a href="mailto:cblok@inbox.lv">cblok@inbox.lv</a>
+                                <a href="tel:+37125644344">+371 25644344</a>
                             </p>
                             <p>
                                 {text.pvn[language]}
@@ -86,7 +83,10 @@ function ContactsPage () {
                                 {text.legAddress[language]}
                             </p>
                             <p>
-                                {text.realAddress[language]}
+                                {text.bank[language]}
+                            </p>
+                            <p>
+                                {text.bankAddr[language]}
                             </p>
                         </div>
                         <div className="socials">
@@ -119,6 +119,7 @@ function ContactsPage () {
                 </section>
                 <section className="column title marginTop30">
                     <h1 className="center">{text.sendMessage[language]}</h1>
+                    <p className="padBot30 center">{text.contactUs[language]}</p>
                     <form onSubmit={onSubmit} className="contact_form" ref={form}>
                         <div className="input">
                             <label htmlFor="name">{text.name[language]}</label>
@@ -175,16 +176,20 @@ const text = {
         lv: "Sazināties"
     },
     pvn: {
-        ru: "Номер плательщика НДС: LV40103858458",
-        lv: "PVN Reģ.nr: LV40103858458"
+        ru: "LV40103901731",
+        lv: "LV40103901731"
     },
     legAddress: {
-        ru: "Юридический адрес: Ganību dambis 22d, Rīga, LV-1045",
-        lv: "Juridiskā adrese: Ganību dambis 22d, Rīga, Latvija, LV-1045"
+        ru: "Kurzemes pr. 90-51, Rīga, LV-1069",
+        lv: "Kurzemes pr. 90-51, Rīga, LV-1069"
     },
-    realAddress: {
-        ru: "Фактический адрес: Ganību dambis 22d, Rīga, LV-1045",
-        lv: "Faktiskā adrese: Ganību dambis 22d, Rīga, Latvija, LV-1045"
+    bank: {
+        ru: "A/S Swedbank: HABALV22",
+        lv: "A/S Swedbank: HABALV22"
+    },
+    bankAddr: {
+        ru: "LV02HABA0551040143528",
+        lv: "LV02HABA0551040143528"
     },
     sendMessage: {
         ru: "Послать сообщение",
@@ -221,5 +226,9 @@ const text = {
     sendError: {
         ru: "ОШИБКА",
         lv: "KĻŪDA"
+    },
+    contactUs: {
+        ru: "Вы можете связаться с нами, заполнив эту контактную форму",
+        lv: "Jūs varat sazināties ar mums, aizpildot šo kontaktformu"
     }
 }
