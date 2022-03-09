@@ -23,7 +23,7 @@ export const Footer = () => {
                     <div className="text">
                         <h1>{text.partnerH1[language]}</h1>
                         <p>{text.partnerP[language]}</p>
-                        <Link to="dilluso.lv">dilluso.lv</Link>
+                        <Link to="dilluso.lv">www.dilluso.lv</Link>
                     </div>
                     <div className="partnerLogo">
                         <img src={dilluso} alt="error"/>

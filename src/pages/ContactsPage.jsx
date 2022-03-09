@@ -74,7 +74,7 @@ function ContactsPage () {
                     <div className="contact_">
                         <div className="contact_info">
                             <p className="urgent padBot15">
-                                <a href="tel:+37125644344">+371 25644344</a>
+                                SIA “C-BLOK”
                             </p>
                             <p>
                                 {text.pvn[language]}
@@ -108,7 +108,7 @@ function ContactsPage () {
                     }
                     <iframe
                         onLoad={() => setMapLoading(false)}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1082.2883570110537!2d24.26678547660726!3d57.14429842225164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eeb79931b76395%3A0x82c9986cbdf5c2fe!2sGriezes%20iela%205%2C%20Carnikava%2C%20Carnikavas%20novads%2C%20LV-2163!5e0!3m2!1slv!2slv!4v1646157442096!5m2!1slv!2slv"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.65579001957!2d24.06199081633209!3d56.95469838089185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecffd3bae190f%3A0xd648f49bd5c6e774!2sSlokas%20iela%2052%2C%20Kurzemes%20rajons%2C%20R%C4%ABga%2C%20LV-1007!5e0!3m2!1slv!2slv!4v1646861501542!5m2!1slv!2slv"
                         width="600"
                         height="450"
                         style={{ borderRadius: `10px`, width: `100%`, height: `400px`, marginBottom: `30px`, border: 0 }}
@@ -119,6 +119,7 @@ function ContactsPage () {
                 </section>
                 <section className="column title marginTop30">
                     <h1 className="center">{text.sendMessage[language]}</h1>
+                    <p className="padBot30 center">{text.dearGuest[language]}</p>
                     <p className="padBot30 center">{text.contactUs[language]}</p>
                     <form onSubmit={onSubmit} className="contact_form" ref={form}>
                         <div className="input">
@@ -172,16 +173,16 @@ const text = {
         lv: "Kontakti | C-BLOCK"
     },
     contact: {
-        ru: "Связаться",
-        lv: "Sazināties"
+        ru: "СВЯЗАТЬСЯ С НАМИ",
+        lv: "SAZINĀTIES AR MUMS"
     },
     pvn: {
-        ru: "LV40103901731",
-        lv: "LV40103901731"
+        ru: "LV40203207255",
+        lv: "LV40203207255"
     },
     legAddress: {
-        ru: "Kurzemes pr. 90-51, Rīga, LV-1069",
-        lv: "Kurzemes pr. 90-51, Rīga, LV-1069"
+        ru: "Slokas iela 52, Rīgā, LV - 1007",
+        lv: "Slokas iela 52, Rīgā, LV - 1007"
     },
     bank: {
         ru: "A/S Swedbank: HABALV22",
@@ -192,8 +193,8 @@ const text = {
         lv: "LV02HABA0551040143528"
     },
     sendMessage: {
-        ru: "Послать сообщение",
-        lv: "Nosūtīt ziņu"
+        ru: "Вызвать специалиста и получить консультацию",
+        lv: "Izsaukt speciālistu un saņemt konsultāciju"
     },
     name: {
         ru: "Имя",
@@ -227,8 +228,12 @@ const text = {
         ru: "ОШИБКА",
         lv: "KĻŪDA"
     },
+    dearGuest: {
+        ru: "Уважаемый гость!",
+        lv: "Cienījamais viesis!"
+    },
     contactUs: {
-        ru: "Вы можете связаться с нами, заполнив эту контактную форму",
-        lv: "Jūs varat sazināties ar mums, aizpildot šo kontaktformu"
+        ru: "Пожалуйста заполните контактную форму ниже, и Наш специалист свяжется с Вами, чтобы назначить визит в удобное для Вас время.",
+        lv: "Lūdzu, aizpildiet zemāk norādīto kontaktformu, un mūsu speciālists sazināsies ar jums, lai nozīmētu vizīti Jums ērtā laikā."
     }
 }

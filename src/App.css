@@ -155,7 +155,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .name h1, .name p {
     margin: 0;
