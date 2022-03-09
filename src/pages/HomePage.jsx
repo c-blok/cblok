@@ -3,12 +3,13 @@ import { Helmet } from "react-helmet"
 import { useSelector } from "react-redux"
 import { Header, Footer } from "../components"
 
+import kran from "../assets/images/kran.png"
 import section1 from "../assets/images/section1.jpeg"
 import section2 from "../assets/images/section2.jpeg"
 import team from "../assets/images/team.jpg"
 import dillusoBlack from "../assets/svg/dillusioBlack.svg"
 import logo from "../assets/svg/logo.svg"
-//TODO fix footer
+
 function HomePage () {
 
     const mainBlock = useRef()
@@ -25,7 +26,7 @@ function HomePage () {
             </Helmet>
             <Header activeIndex={0}/>
             <div className="main_block">
-                <div className="main_image"/>
+                <img className="main_image" src={kran} alt="error"/>
                 <div className="main_text">
                     <h1>{text.mainBlockH1[language]}</h1>
                     <h1>{text.mainBlockH12[language]}</h1>
