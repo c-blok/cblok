@@ -1,5 +1,5 @@
 const initialState = {
-    language: localStorage.getItem('redux-store') ? JSON.parse(localStorage.getItem('redux-store')).language.language : navigator.language === "ru-RU" || navigator.userLanguage === "ru-RU" ? "ru" : "lv"
+    language: localStorage.getItem('cblok') ? JSON.parse(localStorage.getItem('cblok')).language.language : navigator.language === "ru-RU" || navigator.userLanguage === "ru-RU" ? "ru" : "lv"
 }
 
 const language = (state = initialState, action) => {

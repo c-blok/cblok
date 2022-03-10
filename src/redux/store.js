@@ -10,7 +10,7 @@ const initialState = {}
 const store = createStore(rootReducer, initialState,composeEnhancer(applyMiddleware(thunk)))
 
 store.subscribe(()=> {
-    localStorage.setItem('redux-store', JSON.stringify(store.getState()))
+    localStorage.setItem('cblok', JSON.stringify(store.getState()))
 })
 
 export default store;
