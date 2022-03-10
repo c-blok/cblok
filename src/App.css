@@ -455,6 +455,7 @@ header {
 .image .description {
     font-style: italic;
     font-size: 17px;
+    text-align: center;
 }
 
 .main_wrapper section.column {
@@ -538,7 +539,13 @@ img.team {
         text-align: left;
     }
 }
-@media screen and (max-width: 680px)  {
+@media screen and (max-width: 720px)  {
+    .main_wrapper section {
+        flex-direction: column;
+    }
+    .main_wrapper section.reverse {
+        flex-direction: column-reverse;
+    }
     .main_wrapper section {
         margin: 20px 0 20px 0;
     }

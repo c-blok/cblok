@@ -50,7 +50,7 @@ function HomePage () {
                                 </div>
                         </div>
                     </section>
-                    <section>
+                    <section className="reverse">
                         <div className="image">
                             <img src={section2} alt="error"/>
                                 <div className="description">
