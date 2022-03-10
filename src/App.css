@@ -324,11 +324,26 @@ header {
     }
 }
 @media screen and (max-width: 530px)  {
+    .logo img {
+        width: 80px;
+    }
     .logo .name {
-        display: none;
+        /*display: none;*/
+        margin-left: 17px;
+    }
+    .logo .name h1 {
+        font-size: 1.1rem;
     }
     .main_text {
         font-size: 11px;
+    }
+}
+@media screen and (max-width: 380px)  {
+    .logo img {
+        width: 70px;
+    }
+    .logo .name h1 {
+        font-size: 1rem;
     }
 }
 
@@ -495,14 +510,6 @@ img.team {
     font-size: 35px;
 }
 
-/*@media screen and (max-width: 1500px)  {*/
-/*    .main_wrapper section .contacts_buttons {*/
-/*        width: 100%;*/
-/*    }*/
-/*    .main_wrapper section .contacts_buttons .contact p {*/
-/*        font-size: 15px;*/
-/*    }*/
-/*}*/
 @media screen and (max-width: 900px)  {
     .main_wrapper section .contacts_buttons {
         flex-direction: column;
@@ -512,6 +519,7 @@ img.team {
         width: 100%;
     }
     .main_wrapper section .contacts_buttons .contact {
+        width: 90%;
         margin-bottom: 20px;
         padding: 7px 21px;
     }
@@ -527,7 +535,7 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
-        text-align: center;
+        text-align: left;
     }
 }
 @media screen and (max-width: 680px)  {
@@ -559,7 +567,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .foot_logo {
@@ -617,6 +625,12 @@ footer {
     width: 150px;
 }
 
+.partner_mob {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 1000px)  {
     .partner {
         flex-wrap: wrap;
@@ -638,8 +652,15 @@ footer {
     }
 }
 @media screen and (max-width: 700px)  {
+    footer {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .footer_wrapper {
         justify-content: center;
+        height: 90%;
     }
     .partner {
         display: none;
@@ -647,6 +668,24 @@ footer {
     .links {
         border: none;
         padding-left: 5%;
+    }
+    .partner_mob {
+        display: block;
+    }
+    .partner_mob h1 {
+        font-size: 1.2rem;
+    }
+    .partner_mob p {
+        font-size: 0.8em !important;
+        margin: 10px 0;
+    }
+    .partner_mob a {
+        color: white;
+        font-weight: bold;
+    }
+    .partner_mob .partnerLogo img {
+        margin-top: 20px;
+        width: 75px;
     }
 }
 
@@ -678,6 +717,17 @@ footer {
     object-fit: cover;
 }
 
+.disclaimer {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+    .disclaimer {
+        font-size: 0.8rem;
+    }
+}
 /*
     CONTACTS
  */
@@ -821,7 +871,7 @@ footer {
     padding-bottom: 30px;
 }
 
-.marginTop30 {
+.marginTop10 {
     margin-top: 10px !important;
 }
 

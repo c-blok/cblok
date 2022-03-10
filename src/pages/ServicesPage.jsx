@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Header, Footer } from "../components"
+import { Header, Footer, Disclaimer } from "../components"
 
 import repair1 from "../assets/images/services/repair/b27da226-1ec9-4bce-900c-e49b81e91b77.jpg"
 import repair2 from "../assets/images/services/repair/d9697c02-6f69-4c3e-a19f-a49169ccc48e.jpg"
@@ -24,7 +24,8 @@ function ServicesPage () {
             </Helmet>
             <Header activeIndex={1}/>
             <div className="main_wrapper">
-                <section className="information column title">
+                <Disclaimer/>
+                <section className="information column title marginTop10">
                     <h1>{text.repair[language]}</h1>
                     <div className="photos">
                         <div className="photo">

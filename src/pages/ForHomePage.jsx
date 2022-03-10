@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Footer, Header } from "../components"
+import { Footer, Header, Disclaimer } from "../components"
 
 import roofing1 from "../assets/images/forHome/roofing/6bc95d1a-6c1a-4735-af5e-2a7874328df7.jpg"
 import roofing2 from "../assets/images/forHome/roofing/d32d6355-21b8-45a9-8b56-8ab0209dea4e.jpg"
@@ -47,7 +47,8 @@ function ForHomePage () {
             </Helmet>
             <Header activeIndex={2}/>
             <div className="main_wrapper">
-                <section className="information column title">
+                <Disclaimer/>
+                <section className="information column title marginTop10">
                     <h1>{text.roofing[language]}</h1>
                     <div className="photos">
                         <div className="photo">

@@ -40,6 +40,14 @@ export const Footer = () => {
                         <img src={tt} alt="error"/>
                     </Link>
                 </div>
+                <div className="partner_mob">
+                    <h1>{text.partnerH1[language]}</h1>
+                    <p>{text.partnerP[language]}</p>
+                    <a href="www.dilluso.lv">www.dilluso.lv</a>
+                    <div className="partnerLogo">
+                        <img src={dilluso} alt="error"/>
+                    </div>
+                </div>
             </div>
         </footer>
     )

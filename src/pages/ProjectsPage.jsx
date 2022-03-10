@@ -1,9 +1,9 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Header, Footer } from "../components"
+import { Header, Footer, Disclaimer } from "../components"
 
-import testImg from "../assets/images/team.jpg";
+import testImg from "../assets/images/company.jpeg";
 
 
 function ProjectsPage () {
@@ -17,7 +17,8 @@ function ProjectsPage () {
             </Helmet>
             <Header activeIndex={4}/>
             <div className="main_wrapper">
-                <section className="information column title">
+                <Disclaimer/>
+                <section className="information column title marginTop10">
                     <h1>{text.object1[language]}</h1>
                     <div className="photos">
                         <div className="photo">

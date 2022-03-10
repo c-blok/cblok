@@ -117,7 +117,7 @@ function ContactsPage () {
                         title="map"
                     />
                 </section>
-                <section className="column title marginTop30">
+                <section className="column title marginTop10">
                     <h1 className="center">{text.sendMessage[language]}</h1>
                     <p className="padBot15 center">{text.dearGuest[language]}</p>
                     <p className="padBot30 center">{text.contactUs[language]}</p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet"
 import { useSelector } from "react-redux"
-import { Header, Footer } from "../components"
+import { Header, Footer, Disclaimer } from "../components"
 
 import windowBlind1 from "../assets/images/forFlat/windowBlind/8cf27fee-0148-414b-8cc4-60a49abff50a.jpg"
 import windowBlind2 from "../assets/images/forFlat/windowBlind/367bb5bb-480d-4a25-b251-7e7857e54d55.jpg"
@@ -24,7 +24,8 @@ function ForFlatPage () {
             </Helmet>
             <Header activeIndex={3}/>
             <div className="main_wrapper">
-                <section className="information column title">
+                <Disclaimer/>
+                <section className="information column title marginTop10">
                     <h1>{text.windowBlind[language]}</h1>
                     <div className="photos">
                         <div className="photo">

@@ -6,7 +6,7 @@ import { Header, Footer } from "../components"
 import kran from "../assets/images/kran.png"
 import section1 from "../assets/images/section1.jpg"
 import section2 from "../assets/images/section2.jpg"
-import team from "../assets/images/team.jpg"
+import company from "../assets/images/company.jpeg"
 import dillusoBlack from "../assets/svg/dillusioBlack.svg"
 import logo from "../assets/svg/logo.svg"
 
@@ -64,8 +64,8 @@ function HomePage () {
                         </div>
                     </section>
                     <section className="column title">
-                        <h1>{text.team[language]}</h1>
-                        <img className="team" src={team} alt="error"/>
+                        <h1>{text.company[language]}</h1>
+                        <img className="team" src={company} alt="error"/>
                             <div className="contacts_buttons">
                                 <a className="contact" href="tel:25644344">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="20.000000pt"
@@ -158,9 +158,9 @@ const text = {
         ru: "Наши последние объекты. Лето 2020-2021",
         lv: "Mūsu jaunākie objekti. Vasara 2020-2021"
     },
-    team: {
-        ru: "Команда C-BLOK",
-        lv: "C-BLOK komanda"
+    company: {
+        ru: "SIA \"C-BLOK\"",
+        lv: "SIA \"C-BLOK\""
     },
     callUs: {
         ru: "Позвонить нам",

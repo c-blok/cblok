@@ -152,7 +152,7 @@ export default Header;
 const text = {
     logoH1: {
         ru: "СТРОИТЕЛЬНЫЙ БЛОК",
-        lv: "BŪVBLOKS"
+        lv: "CELTNIECĪBAS BLOKS"
     },
     logoP: {
         ru: "СТРОИТЕЛЬНЫЕ И РЕМОНТНЫЕ РАБОТЫ",
