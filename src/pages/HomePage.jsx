@@ -46,7 +46,8 @@ function HomePage () {
                         <div className="image">
                             <img src={section1} alt="error"/>
                                 <div className="description">
-                                    <p>{text.section1Description[language]}</p>
+                                    <p>{text.section1Description1[language]}</p>
+                                    <p>{text.section1Description2[language]}</p>
                                 </div>
                         </div>
                     </section>
@@ -54,7 +55,8 @@ function HomePage () {
                         <div className="image">
                             <img src={section2} alt="error"/>
                                 <div className="description">
-                                    <p>{text.section2Description[language]}</p>
+                                    <p>{text.section2Description1[language]}</p>
+                                    <p>{text.section2Description2[language]}</p>
                                 </div>
                         </div>
                         <div className="text">
@@ -103,12 +105,12 @@ function HomePage () {
                             </p>
                         </div>
                         <div className="image">
-                            <img src={dillusoBlack} alt="error"/>
+                            <img src={dillusoBlack} className="mob_w200 mob_h200" alt="error"/>
                         </div>
                     </section>
                     <section>
                         <div className="image">
-                            <img src={logo} alt="error"/>
+                            <img src={logo} className="mob_w200 mob_h200" alt="error"/>
                         </div>
                         <div className="text">
                             <p className="small">
@@ -146,17 +148,25 @@ const text = {
             "Mūsu uzņēmums ne tikai atsvaidzinās Jūsu remontu, bet arī palīdzēs atdzīvināt Jūsu dzīvokli ar jauniem\n" +
             "modernas interjera tendences."
     },
-    section1Description: {
-        ru: "Наши последние объекты. Зима - лето 2021",
-        lv: "Mūsu jaunākie objekti. Ziema - 2021. gada vasara"
+    section1Description1: {
+        ru: "Наши последние объекты.",
+        lv: "Mūsu jaunākie objekti."
+    },
+    section1Description2: {
+        ru: "Зима - лето 2021",
+        lv: "Ziema - 2021. gada vasara"
     },
     section2Text: {
         ru: "\"C-blok\" - это качественное строительство частных домов \"под ключ\" / обновление фасада / пристройки и террасы любой сложности.",
         lv: "\"C-blok\" ir kvalitatīva privātmāju celtniecība \"zem atslēgas\" / fasādes atjaunošana / jebkuras sarežģītības piebūves un terases."
     },
-    section2Description: {
-        ru: "Наши последние объекты. Лето 2020-2021",
-        lv: "Mūsu jaunākie objekti. Vasara 2020-2021"
+    section2Description1: {
+        ru: "Наши последние объекты.",
+        lv: "Mūsu jaunākie objekti."
+    },
+    section2Description2: {
+        ru: "Лето 2020-2021",
+        lv: "Vasara 2020-2021"
     },
     company: {
         ru: "SIA \"C-BLOK\"",

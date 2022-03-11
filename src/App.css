@@ -282,6 +282,7 @@ header {
     }
     .header_wrapper {
         width: 100%;
+        border-bottom: 3px solid white;
     }
     .nav {
         display: none;
@@ -304,6 +305,9 @@ header {
     }
 }
 @media screen and (max-width: 680px)  {
+    .header_wrapper {
+        border-bottom: 3px solid white;
+    }
     .logo {
         justify-content: center;
         align-items: center;
@@ -313,6 +317,21 @@ header {
         width: 100px;
         height: 100px;
     }
+    .logo .name {
+        margin-left: 10px !important;
+        padding-left: 20px;
+        border-left: 1px solid white;
+    }
+    .logo .name p {
+        /*text-align: center;*/
+    }
+    /*.logo .name {*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*.logo img {*/
+    /*    padding-right: 20px;*/
+    /*    border-right: 1px solid white;*/
+    /*}*/
     .name h1 {
         font-size: 20px;
     }
@@ -550,11 +569,18 @@ img.team {
         margin: 20px 0 20px 0;
     }
     .image img {
-        height: 200px;
+        height: 300px;
         margin-bottom: 10px;
     }
     .history h1 {
         margin: 0;
+    }
+    .mob_w200 {
+        width: 200px !important;
+    }
+
+    .mob_h200 {
+        height: 200px !important;
     }
 }
 
