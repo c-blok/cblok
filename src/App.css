@@ -536,7 +536,7 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
-        text-align: left;
+        text-align: justify;
     }
 }
 @media screen and (max-width: 720px)  {
@@ -550,7 +550,7 @@ img.team {
         margin: 20px 0 20px 0;
     }
     .image img {
-        height: 150px;
+        height: 200px;
         margin-bottom: 10px;
     }
     .history h1 {
@@ -733,6 +733,7 @@ footer {
 @media screen and (max-width: 600px) {
     .disclaimer {
         font-size: 0.8rem;
+        text-align: center;
     }
 }
 /*

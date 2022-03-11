@@ -70,7 +70,7 @@ function ContactsPage () {
             <Header activeIndex={5}/>
             <div className="main_wrapper">
                 <section className="column title">
-                    <h1>{text.contact[language]}</h1>
+                    <h1 className="center">{text.contact[language]}</h1>
                     <div className="contact_">
                         <div className="contact_info">
                             <p className="urgent padBot15">
