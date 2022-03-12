@@ -431,6 +431,15 @@ header {
     transform: rotate(-45deg);
 }
 
+.mob_nav_phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mob_nav_phone img {
+    height: 30px;
+}
 
 .main_wrapper {
     width: 80%;

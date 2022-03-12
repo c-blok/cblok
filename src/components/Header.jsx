@@ -122,7 +122,7 @@ export const Header = ({ activeIndex }) => {
                                 <li className={activeItem === 5 ? 'active' : ''} onClick={() => onSelectedItem(5, '/contacts')}>
                                     <Link to="/contacts">{text.contacts[language]}</Link>
                                 </li>
-                                <div className="language">
+                                <div className="language padBot15">
                                     {language === "ru" ?
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("lv")}>
                                             <path fill="#9E3039" d="m0,0h40v10H0"/>
@@ -136,6 +136,10 @@ export const Header = ({ activeIndex }) => {
                                             <path fill="#DB0D20" d="m0,20h40v10H0"/>
                                         </svg>
                                     }
+                                </div>
+                                <div className="mob_nav_phone marginTop10">
+                                    <img src={phone} alt="error"/>
+                                    <a href="tel:+37125644344">+371 25644344</a>
                                 </div>
                             </ul>
                         </div>
