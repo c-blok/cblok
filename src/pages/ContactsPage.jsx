@@ -189,8 +189,8 @@ const text = {
         lv: "A/S Swedbank: HABALV22"
     },
     bankAddr: {
-        ru: "LV02HABA0551040143528",
-        lv: "LV02HABA0551040143528"
+        ru: "LV17HABA0551046589005",
+        lv: "LV17HABA0551046589005"
     },
     sendMessage: {
         ru: "Вызвать специалиста и получить консультацию",
