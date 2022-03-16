@@ -564,7 +564,7 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
-        text-align: justify;
+        text-align: left;
     }
 }
 @media screen and (max-width: 720px)  {
@@ -663,8 +663,21 @@ footer {
 .links img {
     width: 50px;
 }
+
+.partner .text {
+    display: flex;
+    flex-direction: column;
+}
+.partnerLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.partner_mob .partnerLogo {
+    justify-content: center;
+}
 .partner .partnerLogo img {
-    width: 150px;
+    width: 120px;
 }
 
 .partner_mob {
@@ -674,6 +687,9 @@ footer {
 }
 
 @media screen and (max-width: 1000px)  {
+    .partnerLogo {
+        flex-direction: row;
+    }
     .partner {
         flex-wrap: wrap;
         justify-content: center;
@@ -681,7 +697,7 @@ footer {
     }
     .partner .partnerLogo img {
         margin-top: 20px;
-        width: 100px;
+        width: 70px;
     }
 }
 @media screen and (max-width: 850px)  {
@@ -695,7 +711,7 @@ footer {
 }
 @media screen and (max-width: 700px)  {
     footer {
-        height: 400px;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -906,12 +922,28 @@ footer {
     font-size: 1.1rem;
 }
 
+.padBot2 {
+    padding-bottom: 2px;
+}
+
 .padBot15 {
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
 }
 
 .padBot30 {
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
+}
+
+.marginBot5 {
+    margin-bottom: 5px !important;
+}
+
+.marginBot10 {
+    margin-bottom: 10px !important;
+}
+
+.marginBot20 {
+    margin-bottom: 20px !important;
 }
 
 .marginTop10 {

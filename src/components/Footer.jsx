@@ -4,6 +4,7 @@ import { useSelector } from "react-redux"
 
 import logoWhite from "../assets/svg/logoWhite.svg"
 import dilluso from "../assets/svg/dilluso.svg"
+import vzjumti from "../assets/svg/vzjumtiLogo.svg"
 import fb from "../assets/images/fb.png"
 import inst from "../assets/images/inst.png"
 import tt from "../assets/images/tiktok.png"
@@ -22,11 +23,14 @@ export const Footer = () => {
                 <div className="partner">
                     <div className="text">
                         <h1>{text.partnerH1[language]}</h1>
-                        <p>{text.partnerP[language]}</p>
+                        <p className="marginBot5">{text.partnerP[language]}</p>
                         <Link to="dilluso.lv">www.dilluso.lv</Link>
+                        <p className="marginTop10 marginBot5">{text.partner2P[language]}</p>
+                        <Link to="www.vzjumti.lv">www.vzjumti.lv</Link>
                     </div>
                     <div className="partnerLogo">
                         <img src={dilluso} alt="error"/>
+                        <img src={vzjumti} alt="error"/>
                     </div>
                 </div>
                 <div className="links">
@@ -43,9 +47,14 @@ export const Footer = () => {
                 <div className="partner_mob">
                     <h1>{text.partnerH1[language]}</h1>
                     <p>{text.partnerP[language]}</p>
-                    <a href="www.dilluso.lv">www.dilluso.lv</a>
+                    <Link to="www.dilluso.lv">www.dilluso.lv</Link>
+                    <div className="partnerLogo marginBot20">
+                        <img src={dilluso} className="marginTop10" alt="error"/>
+                    </div>
+                    <p className="marginTop10 marginBot5">{text.partner2P[language]}</p>
+                    <Link to="www.vzjumti.lv">www.vzjumti.lv</Link>
                     <div className="partnerLogo">
-                        <img src={dilluso} alt="error"/>
+                        <img src={vzjumti} className="marginTop10" alt="error"/>
                     </div>
                 </div>
             </div>
@@ -58,11 +67,15 @@ export default Footer;
 
 const text = {
     partnerH1: {
-        ru: "Наш партнёр:",
-        lv: "Mūsu partneris:"
+        ru: "Наши партнёры:",
+        lv: "Mūsu partneri:"
     },
     partnerP: {
         ru: "Изготовление корпусной мебели по индивидуальному заказу",
         lv: "Korpusa mēbeļu izgatavošana pēc individuāla pasūtījuma"
+    },
+    partner2P: {
+        ru: "Кровельные работы",
+        lv: "Jumta darbi"
     }
 }
