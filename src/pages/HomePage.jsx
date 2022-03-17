@@ -191,5 +191,5 @@ const text = {
     cblockHistory: {
         ru: 'Фундамент компании заложен в мае 2015 года, а "Di lusso C3", в свою очередь является строительным подразделением компании SIA "Sinal", более известной под брендом мебельной индустрии "Di lusso". Сочетание полученных с годами знаний, опытных мастеров и ответственного подхода, позволило организовать совместный "блок", который клиент сможет заложить в основу своего строительства и ремонта.',
         lv: 'Uzņēmuma pamats ir 2015. gada maijā, savukārt “Di lusso C3”, savukārt ir SIA “Sinal” būvvienība, kas ir pazīstama ar mēbeļu industrijas “Di lusso” zīmolu. Gadu gaitā iegūtajām zināšanām un ar pieredzējušo meistaru un atbildīgās pieejas kombinācija ļāva organizēt kopīgu “bloku”, ko klients varēs ieķīlāt savas būvniecības un remonta pamatā.'
-    },
+    }
 }
