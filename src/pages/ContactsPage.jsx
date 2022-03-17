@@ -83,7 +83,6 @@ function ContactsPage () {
                                 <p className="urgent">
                                     <a href="mailto:cblok@inbox.lv">cblok@inbox.lv</a>
                                 </p>
-                                s
                             </div>
                             <p>
                                 {text.pvn[language]}
