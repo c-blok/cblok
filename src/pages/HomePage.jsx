@@ -100,7 +100,7 @@ function HomePage () {
                     </div>
                     <section>
                         <div className="text">
-                            <p className="small">
+                            <p className="small justify">
                                 {text.dillusoHistory[language]}
                             </p>
                         </div>
@@ -113,7 +113,7 @@ function HomePage () {
                             <img src={logo} className="mob_w200 mob_h200" alt="error"/>
                         </div>
                         <div className="text">
-                            <p className="small">
+                            <p className="small justify">
                                 {text.cblockHistory[language]}
                             </p>
                         </div>

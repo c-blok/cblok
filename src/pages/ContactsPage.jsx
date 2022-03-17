@@ -76,6 +76,14 @@ function ContactsPage () {
                             <p className="urgent padBot15">
                                 SIA “C-BLOK”
                             </p>
+                            <div className="mob_contact_info padBot15">
+                                <p className="urgent">
+                                    <a href="tel:+37125644344">+371 25644344</a>
+                                </p>
+                                <p className="urgent">
+                                    <a href="mailto:cblok@inbox.lv">cblok@inbox.lv</a>
+                                </p>
+                            </div>
                             <p>
                                 {text.pvn[language]}
                             </p>

@@ -564,7 +564,8 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
-        text-align: left;
+        text-align: justify;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 720px)  {
@@ -805,6 +806,19 @@ footer {
     height: 150px;
 }
 
+.mob_contact_info {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .mob_contact_info {
+        display: block;
+    }
+    .contact_info {
+        height: 200px;
+    }
+}
+
 .socials .links {
     border: none;
     padding: 0;
@@ -948,6 +962,14 @@ footer {
 
 .marginTop10 {
     margin-top: 10px !important;
+}
+
+.justify {
+    text-align: justify !important;
+}
+
+.fontSize20 {
+    font-size: 20px !important;
 }
 
 .center {
