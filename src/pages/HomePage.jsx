@@ -144,7 +144,7 @@ const text = {
         ru: "\"C-blok\" - это стильная и качественная отделка квартир, с разработкой дизайна и проекта.\n" +
             "                                Наша компания не только освежит Ваш ремонт, но и поможет оживить Вашу квартиру новыми\n" +
             "                                модными тенденциями интерьера.",
-        lv: "\"C-blok\" ir dzīvokļu un kvalitatīva dzīvokļu apdare, izstrādājot dizainu un projektu.\n" +
+        lv: "\"C-blok\" ir stilga un kvalitatīva dzīvokļu apdare, izstrādājot dizainu un projektu.\n" +
             "Mūsu uzņēmums ne tikai atsvaidzinās Jūsu remontu, bet arī palīdzēs atdzīvināt Jūsu dzīvokli ar jauniem\n" +
             "modernas interjera tendences."
     },

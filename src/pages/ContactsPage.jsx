@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { Helmet } from "react-helmet"
-import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { Header, Footer } from "../components"
 import emailjs from "@emailjs/browser"
@@ -99,15 +98,15 @@ function ContactsPage () {
                         </div>
                         <div className="socials">
                             <div className="links">
-                                <Link to="/">
+                                <a href="https://www.instagram.com/cblok.lv/" target="_blank" rel="noreferrer">
                                     <img src={inst} alt="error"/>
-                                </Link>
-                                <Link to="/">
+                                </a>
+                                <a href="https://www.facebook.com/cblok.lv" target="_blank" rel="noreferrer">
                                     <img src={fb} alt="error"/>
-                                </Link>
-                                <Link to="/">
+                                </a>
+                                <a href="https://www.tiktok.com/@cblok.lv" target="_blank" rel="noreferrer">
                                     <img src={tt} alt="error"/>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

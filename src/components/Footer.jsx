@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 
 import logoWhite from "../assets/svg/logoWhite.svg"
@@ -24,9 +23,9 @@ export const Footer = () => {
                     <div className="text">
                         <h1>{text.partnerH1[language]}</h1>
                         <p className="marginBot5">{text.partnerP[language]}</p>
-                        <Link to="dilluso.lv">www.dilluso.lv</Link>
+                        <a href="https://www.dilluso.lv" target="_blank" rel="noreferrer">www.dilluso.lv</a>
                         <p className="marginTop10 marginBot5">{text.partner2P[language]}</p>
-                        <Link to="www.vzjumti.lv">www.vzjumti.lv</Link>
+                        <a href="https://www.vzjumti.lv" target="_blank" rel="noreferrer">www.vzjumti.lv</a>
                     </div>
                     <div className="partnerLogo">
                         <img src={dilluso} alt="error"/>
@@ -34,25 +33,25 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="links">
-                    <Link to="">
+                    <a href="https://www.instagram.com/cblok.lv/" target="_blank" rel="noreferrer">
                         <img src={inst} alt="error"/>
-                    </Link>
-                    <Link to="">
+                    </a>
+                    <a href="https://www.facebook.com/cblok.lv" target="_blank" rel="noreferrer">
                         <img src={fb} alt="error"/>
-                    </Link>
-                    <Link to="">
+                    </a>
+                    <a href="https://www.tiktok.com/@cblok.lv" target="_blank" rel="noreferrer">
                         <img src={tt} alt="error"/>
-                    </Link>
+                    </a>
                 </div>
                 <div className="partner_mob">
                     <h1>{text.partnerH1[language]}</h1>
                     <p>{text.partnerP[language]}</p>
-                    <Link to="www.dilluso.lv">www.dilluso.lv</Link>
+                    <a href="www.dilluso.lv" target="_blank" rel="noreferrer">www.dilluso.lv</a>
                     <div className="partnerLogo marginBot20">
                         <img src={dilluso} className="marginTop10" alt="error"/>
                     </div>
                     <p className="marginTop10 marginBot5">{text.partner2P[language]}</p>
-                    <Link to="www.vzjumti.lv">www.vzjumti.lv</Link>
+                    <a href="www.vzjumti.lv" target="_blank" rel="noreferrer">www.vzjumti.lv</a>
                     <div className="partnerLogo">
                         <img src={vzjumti} className="marginTop10" alt="error"/>
                     </div>
