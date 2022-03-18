@@ -564,7 +564,7 @@ img.team {
         width: 90%;
         min-width: 280px;
         margin: 30px 0;
-        text-align: justify;
+        text-align: left;
         font-size: 25px;
     }
 }
