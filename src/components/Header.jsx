@@ -124,13 +124,13 @@ export const Header = ({ activeIndex }) => {
                                 </li>
                                 <div className="language padBot15">
                                     {language === "ru" ?
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("lv")}>
+                                        <svg className="pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("lv")}>
                                             <path fill="#9E3039" d="m0,0h40v10H0"/>
                                             <path fill="#FFF" d="m0,10h40v10H0"/>
                                             <path fill="#9E3039" d="m0,20h40v10H0"/>
                                         </svg>
                                         :
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("ru")}>
+                                        <svg className="pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="30" onClick={() => changeLanguage("ru")}>
                                             <path fill="#FFFFFF" d="m0,0h40v10H0"/>
                                             <path fill="#018DE9" d="m0,10h40v10H0"/>
                                             <path fill="#DB0D20" d="m0,20h40v10H0"/>

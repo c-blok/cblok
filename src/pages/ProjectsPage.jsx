@@ -55,15 +55,7 @@ const text = {
         lv: "Projekti | C-BLOCK"
     },
     object1: {
-        ru: "Обьект 1",
-        lv: "1. Objekts"
-    },
-    object2: {
-        ru: "Обьект 2",
-        lv: "2. Objekts"
-    },
-    object3: {
-        ru: "Обьект 3",
-        lv: "3. Objekts"
+        ru: "Постройка дома в Олайне",
+        lv: "Mājas uzbūve Olainē"
     }
 }

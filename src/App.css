@@ -972,8 +972,12 @@ footer {
     font-size: 20px !important;
 }
 
+.pointer:hover {
+    cursor: pointer !important;
+}
+
 .center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .loader {

@@ -141,10 +141,10 @@ const text = {
         lv: "SAVĀ CELTNIECĪBĀ!"
     },
     section1Text: {
-        ru: "\"C-blok\" - это стильная и качественная отделка квартир, с разработкой дизайна и проекта.\n" +
+        ru: "\"C-BLOK\" - это стильная и качественная отделка квартир, с разработкой дизайна и проекта.\n" +
             "                                Наша компания не только освежит Ваш ремонт, но и поможет оживить Вашу квартиру новыми\n" +
             "                                модными тенденциями интерьера.",
-        lv: "\"C-blok\" ir stilga un kvalitatīva dzīvokļu apdare, izstrādājot dizainu un projektu.\n" +
+        lv: "\"C-BLOK\" ir stilga un kvalitatīva dzīvokļu apdare, izstrādājot dizainu un projektu.\n" +
             "Mūsu uzņēmums ne tikai atsvaidzinās Jūsu remontu, bet arī palīdzēs atdzīvināt Jūsu dzīvokli ar jauniem\n" +
             "modernas interjera tendences."
     },
@@ -157,8 +157,8 @@ const text = {
         lv: "Ziema - 2021. gada vasara"
     },
     section2Text: {
-        ru: "\"C-blok\" - это качественное строительство частных домов \"под ключ\" / обновление фасада / пристройки и террасы любой сложности.",
-        lv: "\"C-blok\" ir kvalitatīva privātmāju celtniecība \"zem atslēgas\" / fasādes atjaunošana / jebkuras sarežģītības piebūves un terases."
+        ru: "\"C-BLOK\" - это качественное строительство частных домов \"под ключ\" / обновление фасада / пристройки и террасы любой сложности.",
+        lv: "\"C-BLOK\" ir kvalitatīva privātmāju celtniecība \"zem atslēgas\" / fasādes atjaunošana / jebkuras sarežģītības piebūves un terases."
     },
     section2Description1: {
         ru: "Наши последние объекты.",
@@ -185,8 +185,8 @@ const text = {
         lv: "Izveides vēsture"
     },
     dillusoHistory: {
-        ru: 'Компания "C-blok" это молодой и очень амбициозный проект с далеко идущими планами,миссией и мощнейшим творческим потенциалом. Сфера интересов "С-Block" распространяется на строительство и ремонтные работы любой сложности. Это идеальная комбинация молодых, целеустремлённых предпринимателей из "C-blok", и опытных, рассудительных предпринимателей из "Di lusso C3". Основой блока,является альянс строительных компаний,включающих в свой штат только самых опытных специалистов и наиболее сильных кадров под управлением талантливых организаторов,опирающихся на богатый управленческий опыт предпренимателей из компании "Di lusso C3". Такой симбиоз позволяет успешно выполнять самые разные задачи и находить наиболее оптимальные решения даже в действительно серьёзных вызовах.',
-        lv: 'Uzņēmums “C-blok” ir jauns un ļoti ambiciozs projekts ar tālejošiem plāniem, misiju un spēcīgu radošu potenciālu. “C-Block” interešu sfēra attiecas uz jebkuras sarežģītības būvniecību un remontdarbiem. Tā ir ideāla jaunu, mērķtiecīgu uzņēmēju kombinācija no “C-blok” un pieredzējušiem, gudriem uzņēmējiem no “Di lusso C3”. Galvenais bloks ir būvkompāniju alianse, kas ietver tikai vispieredzējušākos speciālistus un visspēcīgākos kadrus, talantīgu organizatoru vadībā, kas balstīti uz bagātu vadītāju pieredzi no kompānijas “Di lusso C3”. Šāda simbioze ļauj veiksmīgi veikt visdažādākos uzdevumus un atrast vispiemērotākos risinājumus pat patiesi nopietnos izaicinājumos.'
+        ru: 'Компания "C-BLOK" это молодой и очень амбициозный проект с далеко идущими планами,миссией и мощнейшим творческим потенциалом. Сфера интересов "С-Block" распространяется на строительство и ремонтные работы любой сложности. Это идеальная комбинация молодых, целеустремлённых предпринимателей из "C-BLOK", и опытных, рассудительных предпринимателей из "Di lusso C3". Основой блока,является альянс строительных компаний,включающих в свой штат только самых опытных специалистов и наиболее сильных кадров под управлением талантливых организаторов,опирающихся на богатый управленческий опыт предпренимателей из компании "Di lusso C3". Такой симбиоз позволяет успешно выполнять самые разные задачи и находить наиболее оптимальные решения даже в действительно серьёзных вызовах.',
+        lv: 'Uzņēmums “C-BLOK” ir jauns un ļoti ambiciozs projekts ar tālejošiem plāniem, misiju un spēcīgu radošu potenciālu. “C-Block” interešu sfēra attiecas uz jebkuras sarežģītības būvniecību un remontdarbiem. Tā ir ideāla jaunu, mērķtiecīgu uzņēmēju kombinācija no “C-BLOK” un pieredzējušiem, gudriem uzņēmējiem no “Di lusso C3”. Galvenais bloks ir būvkompāniju alianse, kas ietver tikai vispieredzējušākos speciālistus un visspēcīgākos kadrus, talantīgu organizatoru vadībā, kas balstīti uz bagātu vadītāju pieredzi no kompānijas “Di lusso C3”. Šāda simbioze ļauj veiksmīgi veikt visdažādākos uzdevumus un atrast vispiemērotākos risinājumus pat patiesi nopietnos izaicinājumos.'
     },
     cblockHistory: {
         ru: 'Фундамент компании заложен в мае 2015 года, а "Di lusso C3", в свою очередь является строительным подразделением компании SIA "Sinal", более известной под брендом мебельной индустрии "Di lusso". Сочетание полученных с годами знаний, опытных мастеров и ответственного подхода, позволило организовать совместный "блок", который клиент сможет заложить в основу своего строительства и ремонта.',
