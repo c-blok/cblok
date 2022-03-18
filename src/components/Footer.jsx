@@ -46,12 +46,12 @@ export const Footer = () => {
                 <div className="partner_mob">
                     <h1>{text.partnerH1[language]}</h1>
                     <p>{text.partnerP[language]}</p>
-                    <a href="www.dilluso.lv" target="_blank" rel="noreferrer">www.dilluso.lv</a>
+                    <a href="https://www.dilluso.lv" target="_blank" rel="noreferrer">www.dilluso.lv</a>
                     <div className="partnerLogo marginBot20">
                         <img src={dilluso} className="marginTop10" alt="error"/>
                     </div>
                     <p className="marginTop10 marginBot5">{text.partner2P[language]}</p>
-                    <a href="www.vzjumti.lv" target="_blank" rel="noreferrer">www.vzjumti.lv</a>
+                    <a href="https://www.vzjumti.lv" target="_blank" rel="noreferrer">www.vzjumti.lv</a>
                     <div className="partnerLogo">
                         <img src={vzjumti} className="marginTop10" alt="error"/>
                     </div>
