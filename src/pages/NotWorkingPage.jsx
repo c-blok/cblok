@@ -25,11 +25,11 @@ export default NotWorkingPage;
 
 const text = {
     title: {
-        ru: "Временно не доступен | C-BLOCK",
+        ru: "Временно недоступен | C-BLOCK",
         lv: "Īslaicīgi nav pieejams | C-BLOCK"
     },
     h1: {
-        ru: "Временно не доступен",
+        ru: "Временно недоступен",
         lv: "Īslaicīgi nav pieejams"
     }
 }
