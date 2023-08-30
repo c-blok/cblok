@@ -1,9 +1,11 @@
 @import "src/styles/global";
 
 .header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
   height: $headerHeight;
   transition: background-color $transitionTime ease;
-  background-color: rgba(0,0,0,0.5);
 
   .container {
     margin: auto;
