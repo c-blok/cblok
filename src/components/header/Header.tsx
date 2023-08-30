@@ -13,10 +13,12 @@ export const Header = ({locale} : {locale: string}) => {
         const scrollCheck = () => {
             const y = window.scrollY
 
-            if (y > 0) {
-                headerRef.current?.style.backgroundColor = "#647666"
-            } else {
-                headerRef.current?.style.backgroundColor = ""
+            if (headerRef.current) {
+                if (y > 0) {
+                    headerRef.current.style.backgroundColor = "#647666"
+                } else {
+                    headerRef.current.style.backgroundColor = ""
+                }
             }
         }
 
