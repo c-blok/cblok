@@ -14,9 +14,9 @@ export const Header = ({locale} : {locale: string}) => {
             const y = window.scrollY
 
             if (y > 0) {
-                headerRef.current.style.backgroundColor = "#647666"
+                headerRef.current?.style.backgroundColor = "#647666"
             } else {
-                headerRef.current.style.backgroundColor = ""
+                headerRef.current?.style.backgroundColor = ""
             }
         }
 
