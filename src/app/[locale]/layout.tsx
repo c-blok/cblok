@@ -1,10 +1,12 @@
-import '../globals.css'
+import '../../styles/reset.css'
+import '../global.css'
 import type { Metadata } from 'next'
 import {getTranslator} from 'next-intl/server';
 import { Raleway } from 'next/font/google'
 import React from "react";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { Header } from "../../components/index";
 
 const inter = Raleway({ subsets: ['latin', 'cyrillic'] })
 
@@ -13,20 +15,26 @@ export async function generateMetadata({params}: {params: { locale: string }}): 
 
 
   return {
+    metadataBase: new URL('https://cblock.lv'),
     title: {
       default: t('title'),
       template: `%s | ${t('title')}`,
     },
     description: t('description'),
     keywords: t('keywords'),
+    alternates: {
+      canonical: "/",
+      languages: {
+        "ru": '/ru'
+      }
+    },
     openGraph: {
       type: "website",
-      images: ['https://cblock.lv/favicon.ico'],
+      images: ['/favicon.ico'],
       siteName: "C-BLOCK",
       locale: params.locale,
       title: t('title'),
-      description: t('description'),
-      url: "https://cblock.lv"
+      description: t('description')
     }
   }
 }
@@ -48,7 +56,10 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header locale={locale} />
+        {children}
+      </body>
     </html>
   )
 }

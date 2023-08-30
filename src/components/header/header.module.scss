@@ -1,0 +1,56 @@
+@import "src/styles/global";
+
+.header {
+  height: $headerHeight;
+  transition: background-color $transitionTime ease;
+  background-color: rgba(0,0,0,0.5);
+
+  .container {
+    margin: auto;
+    @include maxWrapper();
+    @include wrapper();
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    .navigation {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      .links {
+        justify-content: flex-end;
+        flex: 1;
+        gap: 3%;
+        display: flex;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 1.15em;
+        color: $bg;
+        transition: font-weight 1s ease;
+        &.active, &:hover {
+          font-weight: 600 !important;
+        }
+        &::after {
+          display: block;
+          content: attr(title);
+          font-weight: bold !important;
+          height: 1px;
+          color: transparent;
+          overflow: hidden;
+          visibility: hidden;
+        }
+      }
+
+      .lang {
+        margin-left: 4%;
+        display: flex;
+        gap: 20px;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,19 @@
+$small: 600px;
+
+$gray: #989898;
+$bg: #FFF;
+$active: #B3B3B3;
+$neutral: #647666;
+
+$headerHeight: 106px;
+
+$transitionTime: 0.5s;
+
+
+@mixin maxWrapper() {
+  max-width: 1700px;
+  margin: auto;
+}
+@mixin wrapper() {
+  padding: 0 30px;
+}

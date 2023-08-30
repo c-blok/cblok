@@ -1,0 +1,62 @@
+@import "src/styles/global";
+
+.section {
+
+  &.home {
+    height: calc(100vh - $headerHeight);
+    min-height: 400px;
+    background-color: rgba(0,0,0,0.5);
+
+    .container {
+      @include maxWrapper;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .logo {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+      }
+
+      .socials {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $bg;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        font-size: 1.1em;
+
+        .links {
+          display: flex;
+          gap: 32px;
+
+          a {
+            svg {
+              path {
+                transition: fill $transitionTime ease;
+              }
+            }
+            &:hover {
+              svg {
+                path {
+                  fill: $active;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
