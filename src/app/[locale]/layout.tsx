@@ -7,6 +7,8 @@ import React from "react";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Header } from "../../components/index";
+import Image from "next/image";
+import BgImage from "../../../public/bg.png";
 
 const inter = Raleway({ subsets: ['latin', 'cyrillic'] })
 
@@ -57,6 +59,9 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
+        <div className={"bg"}>
+          <Image src={BgImage} alt={"bg"} />
+        </div>
         <Header locale={locale} />
         {children}
       </body>
