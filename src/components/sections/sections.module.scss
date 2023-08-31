@@ -23,7 +23,7 @@ $titleHeight: 94px;
   }
 
   &.home {
-    height: calc(100dvh - $headerHeight);
+    height: calc(100dvh - #{$headerHeight});
     min-height: 400px;
     background-color: rgba(0,0,0,0.5);
 
@@ -126,7 +126,7 @@ $titleHeight: 94px;
       min-height: 400px;
       max-height: 1200px;
       width: 100%;
-      height: calc(100dvh - $headerHeight - $titleHeight);
+      height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
       display: flex;
 
       .service {
@@ -194,6 +194,43 @@ $titleHeight: 94px;
 
       }
 
+    }
+  }
+
+  &.portfolio, &.contacts {
+    .block {
+      height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
+      background-color: rgba(63, 63, 63, 0.80);
+    }
+  }
+
+  &.partners {
+    padding-top: 0;
+    margin-top: $headerHeight;
+    background-color: $gray2;
+    .box {
+
+      @include maxWrapper();
+      @include wrapper();
+      padding: 35px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.45em;
+      gap: 3%;
+
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $bg;
+        margin-right: 3%;
+      }
+
+      img {
+        width: 12%;
+        object-fit: contain;
+      }
     }
   }
 

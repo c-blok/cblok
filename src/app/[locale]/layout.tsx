@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { Header } from "../../components/index";
 import Image from "next/image";
 import BgImage from "../../../public/bg.png";
+import { Footer } from "../../components/footer/Footer";
 
 const inter = Raleway({ subsets: ['latin', 'cyrillic'] })
 
@@ -64,6 +65,7 @@ export default function RootLayout({
         </div>
         <Header locale={locale} />
         {children}
+        <Footer locale={locale} />
       </body>
     </html>
   )

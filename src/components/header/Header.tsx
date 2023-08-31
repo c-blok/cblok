@@ -49,8 +49,8 @@ export const Header = ({locale} : {locale: string}) => {
                         <li><Link title="Galvenā" href={"/#home"}>Galvenā</Link></li>
                         <li><Link title="Par mums" href={"/#about"}>Par mums</Link></li>
                         <li><Link title="Pakalpojumi" href={"/#services"}>Pakalpojumi</Link></li>
-                        <li><Link title="Portfolio" href={"/#"}>Portfolio</Link></li>
-                        <li><Link title="Kontakti" href={"/#"}>Kontakti</Link></li>
+                        <li><Link title="Portfolio" href={"/#portfolio"}>Portfolio</Link></li>
+                        <li><Link title="Kontakti" href={"/#contacts"}>Kontakti</Link></li>
                     </ul>
                     <ul className={style.lang}>
                         <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
