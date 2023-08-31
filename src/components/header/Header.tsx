@@ -2,12 +2,29 @@
 
 import style from './header.module.scss';
 import Link from 'next-intl/link';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Header = ({locale} : {locale: string}) => {
 
     const headerRef = useRef<HTMLHeadElement>(null);
+    const [activeSection, setActiveSection] = useState('');
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 0 && rect.bottom >= 0) {
+                    setActiveSection(section.id);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     useEffect(() => {
 
         const scrollCheck = () => {
@@ -46,11 +63,11 @@ export const Header = ({locale} : {locale: string}) => {
                 </Link>
                 <nav className={style.navigation}>
                     <ul className={style.links}>
-                        <li><Link title="Galvenā" href={"/#home"}>Galvenā</Link></li>
-                        <li><Link title="Par mums" href={"/#about"}>Par mums</Link></li>
-                        <li><Link title="Pakalpojumi" href={"/#services"}>Pakalpojumi</Link></li>
-                        <li><Link title="Portfolio" href={"/#portfolio"}>Portfolio</Link></li>
-                        <li><Link title="Kontakti" href={"/#contacts"}>Kontakti</Link></li>
+                        <li><Link className={activeSection === "home" ? style.active : ""} title="Galvenā" href={"/#home"}>Galvenā</Link></li>
+                        <li><Link className={activeSection === "about" ? style.active : ""} title="Par mums" href={"/#about"}>Par mums</Link></li>
+                        <li><Link className={activeSection === "services" ? style.active : ""} title="Pakalpojumi" href={"/#services"}>Pakalpojumi</Link></li>
+                        <li><Link className={activeSection === "portfolio" ? style.active : ""} title="Portfolio" href={"/#portfolio"}>Portfolio</Link></li>
+                        <li><Link className={activeSection === "contacts" ? style.active : ""} title="Kontakti" href={"/#contacts"}>Kontakti</Link></li>
                     </ul>
                     <ul className={style.lang}>
                         <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
