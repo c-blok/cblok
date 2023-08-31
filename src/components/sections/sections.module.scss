@@ -20,7 +20,7 @@
   }
 
   &.home {
-    height: calc(100vh - $headerHeight);
+    height: calc(100dvh - $headerHeight);
     min-height: 400px;
     background-color: rgba(0,0,0,0.5);
 
