@@ -1,6 +1,4 @@
 import style from './sections.module.scss';
-import Link from "next-intl/link";
-import { FacebookIcon, InstagramIcon, TikTokIcon } from "../../assets/icons/index";
 import Image from "next/image";
 import AboutImage from "../../assets/images/about.png";
 
