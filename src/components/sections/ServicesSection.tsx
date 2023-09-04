@@ -3,19 +3,24 @@ import firstService from "../../assets/images/services/remontDarbi.png";
 import secondService from "../../assets/images/services/nojaukDarbi.png";
 import thirdService from "../../assets/images/services/celtDarbi.png";
 import { Service } from "./services/Service";
+import { useTranslations } from "next-intl";
+import { DownloadBlock } from "./download/DownloadBlock";
 
 export const ServicesSection = ({ locale } : {locale: string}) => {
+
+    const t = useTranslations('services');
 
     return (
         <section id={"services"} className={style.section + " " + style.services}>
             <div className={style.title}>
-                <h2>Mūsu Pakalpojumi</h2>
+                <h2>{t("title")}</h2>
             </div>
             <div className={style.container}>
-                <Service title={"Remont darbi"} text={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/><br/>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} image={firstService}/>
-                <Service title={"Nojaukšanas darbi"} text={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/><br/>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} image={secondService}/>
-                <Service title={"Celtniecības darbi"} text={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/><br/>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} image={thirdService}/>
+                <Service title={t("construction.title")} text={t("construction.text")} image={thirdService}/>
+                <Service title={t("repair.title")} text={t("repair.text")} image={firstService}/>
+                <Service title={t("other.title")} text={t("other.text")} image={secondService}/>
             </div>
+            <DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} />
         </section>
     )
 }
