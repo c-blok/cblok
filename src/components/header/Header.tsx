@@ -3,18 +3,20 @@
 import style from './header.module.scss';
 import Link from 'next-intl/link';
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export const Header = ({locale} : {locale: string}) => {
 
     const headerRef = useRef<HTMLHeadElement>(null);
     const [activeSection, setActiveSection] = useState('');
+    const t = useTranslations('header');
 
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
                 const rect = section.getBoundingClientRect();
-                if (rect.top <= 0 && rect.bottom >= 0) {
+                if (rect.top - 100 <= 0 && rect.bottom >= 0) {
                     setActiveSection(section.id);
                 }
             });
@@ -25,14 +27,17 @@ export const Header = ({locale} : {locale: string}) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     useEffect(() => {
+
+        const headerBg = "#43484B";
 
         const scrollCheck = () => {
             const y = window.scrollY
 
             if (headerRef.current) {
                 if (y > 0) {
-                    headerRef.current.style.backgroundColor = "#647666"
+                    headerRef.current.style.backgroundColor = headerBg
                 } else {
                     headerRef.current.style.backgroundColor = ""
                 }
@@ -40,6 +45,10 @@ export const Header = ({locale} : {locale: string}) => {
         }
 
         window.addEventListener("scroll", scrollCheck);
+
+        if (window.scrollY > 0 && headerRef.current) {
+            headerRef.current.style.backgroundColor = headerBg
+        }
 
         return () => window.removeEventListener("scroll", scrollCheck)
 
@@ -63,11 +72,11 @@ export const Header = ({locale} : {locale: string}) => {
                 </Link>
                 <nav className={style.navigation}>
                     <ul className={style.links}>
-                        <li><Link className={activeSection === "home" ? style.active : ""} title="Galvenā" href={"/#home"}>Galvenā</Link></li>
-                        <li><Link className={activeSection === "about" ? style.active : ""} title="Par mums" href={"/#about"}>Par mums</Link></li>
-                        <li><Link className={activeSection === "services" ? style.active : ""} title="Pakalpojumi" href={"/#services"}>Pakalpojumi</Link></li>
-                        <li><Link className={activeSection === "portfolio" ? style.active : ""} title="Portfolio" href={"/#portfolio"}>Portfolio</Link></li>
-                        <li><Link className={activeSection === "contacts" ? style.active : ""} title="Kontakti" href={"/#contacts"}>Kontakti</Link></li>
+                        <li><Link className={activeSection === "home" ? style.active : ""} title={t("home")} href={"/#home"}>{t("home")}</Link></li>
+                        <li><Link className={activeSection === "about" ? style.active : ""} title={t("about")} href={"/#about"}>{t("about")}</Link></li>
+                        <li><Link className={activeSection === "services" ? style.active : ""} title={t("services")} href={"/#services"}>{t("services")}</Link></li>
+                        <li><Link className={activeSection === "portfolio" ? style.active : ""} title={t("portfolio")} href={"/#portfolio"}>{t("portfolio")}</Link></li>
+                        <li><Link className={activeSection === "contacts" ? style.active : ""} title={t("contacts")} href={"/#contacts"}>{t("contacts")}</Link></li>
                     </ul>
                     <ul className={style.lang}>
                         <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>

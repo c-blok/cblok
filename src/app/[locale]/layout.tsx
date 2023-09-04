@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import {getTranslator} from 'next-intl/server';
 import { Raleway } from 'next/font/google'
 import React from "react";
-import { useLocale } from "next-intl";
+import { NextIntlClientProvider, useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Header } from "../../components/index";
 import Image from "next/image";
@@ -42,7 +42,7 @@ export async function generateMetadata({params}: {params: { locale: string }}): 
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params
 }: {
@@ -51,6 +51,13 @@ export default function RootLayout({
 }) {
 
   const locale = useLocale();
+  let messages;
+  try {
+    messages = (await import(`../../translations/messages/${locale}.json`)).default;
+  } catch (error) {
+    console.log(error)
+    notFound();
+  }
 
   if (params.locale !== locale) {
     notFound();
@@ -60,12 +67,14 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <div className={"bg"}>
-          <Image src={BgImage} alt={"bg"} />
-        </div>
-        <Header locale={locale} />
-        {children}
-        <Footer locale={locale} />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <div className={"bg"}>
+            <Image src={BgImage} alt={"bg"} />
+          </div>
+          <Header locale={locale} />
+            {children}
+          <Footer locale={locale} />
+        </NextIntlClientProvider>
       </body>
     </html>
   )

@@ -1,8 +1,12 @@
 import style from './sections.module.scss';
 import Link from "next-intl/link";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "../../assets/icons/index";
+import { useTranslations } from "next-intl";
 
 export const HomeSection = ({ locale } : {locale: string}) => {
+
+    const t = useTranslations('home');
+
     return (
         <section id={"home"} className={style.section + " " + style.home}>
             <div className={style.container}>
@@ -24,9 +28,10 @@ export const HomeSection = ({ locale } : {locale: string}) => {
                             </clipPath>
                         </defs>
                     </svg>
+                    <h1>{t("h1")}</h1>
                 </div>
                 <div className={style.socials}>
-                    <div>Seko mums:</div>
+                    <div>{t("socials")}</div>
                     <div className={style.links}>
                         <Link href={"/"} target={"_blank"}>
                             <TikTokIcon />

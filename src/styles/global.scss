@@ -1,11 +1,12 @@
 $small: 600px;
 
 $bg: #FFF;
-$gray: #989898;
-$gray2: #4F4F4F;;
+$gray: #2E3133;
+$gray2: #4F4F4F;
 $active: #B3B3B3;
-$neutral: #647666;
-$blockColor: #6F7970;
+$neutral: #3F4F4C;
+$blockColor: #43625D;
+$headerColor: #43484B;
 
 $headerHeight: 106px;
 
@@ -18,4 +19,37 @@ $transitionTime: 0.5s;
 }
 @mixin wrapper() {
   padding: 0 30px;
+}
+
+
+.button {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 60px;
+  border-radius: 4px;
+  border: 2px solid $bg;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: $bg;
+  white-space: nowrap;
+  transition: border-color $transitionTime, color $transitionTime;
+  svg {
+    path {
+      transition: stroke $transitionTime;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: $active;
+    color: $active;
+    svg {
+      path {
+        stroke: $active;
+      }
+    }
+  }
 }
