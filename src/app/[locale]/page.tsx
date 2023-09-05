@@ -14,8 +14,8 @@ export default function Home({ params }: { params: { locale: string } }) {
         <AboutSection locale={params.locale}/>
         <ServicesSection locale={params.locale}/>
         <PortfolioSection locale={params.locale}/>
-        <ContactsSection locale={params.locale}/>
         <PartnersSection locale={params.locale}/>
+        <ContactsSection locale={params.locale}/>
       </main>
   )
 }

@@ -356,30 +356,34 @@ $titleHeight: 90px;
   &.partners {
     padding-top: 0;
     margin-top: $headerHeight;
-    background-color: $gray2;
+    background-color: $gray;
+    padding-bottom: $titleHeight;
     .box {
 
       @include maxWrapper();
       @include wrapper();
-      padding: 35px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 1.45em;
-      gap: 3%;
 
-      h3 {
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        color: $bg;
-        margin-right: 3%;
-        font-size: 1.45em;
-      }
-
-      img {
-        width: 12%;
-        object-fit: contain;
+      .partner {
+        width: 15%;
+        min-width: 100px;
+        padding-bottom: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #4A4A4A;
+        position: relative;
+        img {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 60%;
+          position: absolute;
+          object-fit: contain;
+        }
       }
     }
   }
