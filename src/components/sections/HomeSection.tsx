@@ -31,16 +31,15 @@ export const HomeSection = ({ locale } : {locale: string}) => {
                     <h1>{t("h1")}</h1>
                 </div>
                 <div className={style.socials}>
-                    <div>{t("socials")}</div>
                     <div className={style.links}>
-                        <Link href={"/"} target={"_blank"}>
-                            <TikTokIcon />
+                        <Link href={"https://www.facebook.com/cblok.lv"} target={"_blank"}>
+                            <FacebookIcon />
                         </Link>
-                        <Link href={"/"} target={"_blank"}>
+                        <Link href={"https://www.instagram.com/cblok.lv/"} target={"_blank"}>
                             <InstagramIcon />
                         </Link>
-                        <Link href={"/"} target={"_blank"}>
-                            <FacebookIcon />
+                        <Link href={"https://www.tiktok.com/@cblok.lv"} target={"_blank"}>
+                            <TikTokIcon />
                         </Link>
                     </div>
                 </div>

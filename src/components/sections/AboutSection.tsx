@@ -3,7 +3,6 @@ import Image from "next/image";
 import AboutImage from "../../assets/images/about.png";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { DownloadIcon, PDFIcon, PhoneIcon } from "../../assets/icons/index";
 import { DownloadBlock } from "./download/DownloadBlock";
 
 export const AboutSection = ({ locale } : {locale: string}) => {
@@ -16,18 +15,17 @@ export const AboutSection = ({ locale } : {locale: string}) => {
                 <div className={style.text}>
                     <h2>{t("h2")}</h2>
                     <p dangerouslySetInnerHTML={{ __html: t("text") || "" }}/>
+                    <h3>{t("h3")}</h3>
                     <div className={style.buttonBox}>
-                        <Link href={"tel:22331502"} className={style.button}>
-                            <PhoneIcon />
-                            {t("contactUs")}
-                        </Link>
+                        <Link href={"tel:+37120004922"}>+371 20 004 922</Link>
+                        <Link href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</Link>
                     </div>
                 </div>
                 <div className={style.image}>
                     <Image src={AboutImage} alt={"image"} />
                 </div>
             </div>
-            <DownloadBlock locale={locale} h4={t("h2")} text={t("downloadText")} />
+            <DownloadBlock locale={locale} h4={t("downloadTitle")} text={t("downloadText")} />
         </section>
     )
 }

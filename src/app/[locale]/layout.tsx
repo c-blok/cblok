@@ -1,5 +1,7 @@
 import '../../styles/reset.css'
 import '../global.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import type { Metadata } from 'next'
 import {getTranslator} from 'next-intl/server';
 import { Raleway } from 'next/font/google'
