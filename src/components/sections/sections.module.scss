@@ -196,10 +196,11 @@ $titleHeight: 90px;
 
 
           h3 {
-            font-size: 3.2vw;
+            font-size: 4.2vw;
           }
           .text {
-            font-size: 2vw;
+            text-align: center;
+            font-size: 3.5vw;
           }
           img {
             height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
@@ -694,6 +695,10 @@ $titleHeight: 90px;
       transform: translate(-50%, -50%);
       position: absolute;
       width: 100%;
+    }
+    @media screen and (max-width: $small) {
+      width: 11%;
+      padding-bottom: 11%;
     }
   }
 

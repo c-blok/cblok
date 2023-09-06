@@ -105,15 +105,15 @@ export const Header = ({locale} : {locale: string}) => {
                             </svg>
                         </div>
                         <ul className={style.lang}>
-                            <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
-                            <li><Link title="RU" className={locale === "ru" ? style.active : ""} href={"/"} locale={"ru"}>RU</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} title="RU" className={locale === "ru" ? style.active : ""} href={"/"} locale={"ru"}>RU</Link></li>
                         </ul>
                         <ul className={style.links}>
-                            <li><Link className={activeSection === "home" ? style.active : ""} title={t("home")} href={"/#home"}>{t("home")}</Link></li>
-                            <li><Link className={activeSection === "about" ? style.active : ""} title={t("about")} href={"/#about"}>{t("about")}</Link></li>
-                            <li><Link className={activeSection === "services" ? style.active : ""} title={t("services")} href={"/#services"}>{t("services")}</Link></li>
-                            <li><Link className={activeSection === "portfolio" ? style.active : ""} title={t("portfolio")} href={"/#portfolio"}>{t("portfolio")}</Link></li>
-                            <li><Link className={activeSection === "contacts" ? style.active : ""} title={t("contacts")} href={"/#contacts"}>{t("contacts")}</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} className={activeSection === "home" ? style.active : ""} title={t("home")} href={"/#home"}>{t("home")}</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} className={activeSection === "about" ? style.active : ""} title={t("about")} href={"/#about"}>{t("about")}</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} className={activeSection === "services" ? style.active : ""} title={t("services")} href={"/#services"}>{t("services")}</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} className={activeSection === "portfolio" ? style.active : ""} title={t("portfolio")} href={"/#portfolio"}>{t("portfolio")}</Link></li>
+                            <li><Link onClick={() => setIsOpened(false)} className={activeSection === "contacts" ? style.active : ""} title={t("contacts")} href={"/#contacts"}>{t("contacts")}</Link></li>
                         </ul>
                     </div>
                 </div>

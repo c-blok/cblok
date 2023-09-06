@@ -80,7 +80,7 @@
       @include maxWrapper();
       @include wrapper();
       display: flex;
-      gap: 16px;
+      gap: 20px;
       flex-direction: column;
 
       .close {
@@ -97,7 +97,7 @@
 
       .links {
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
         li {
           text-align: right;
         }
