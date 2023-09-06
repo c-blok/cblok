@@ -5,6 +5,7 @@ import thirdService from "../../assets/images/services/celtDarbi.png";
 import { Service } from "./services/Service";
 import { useTranslations } from "next-intl";
 import { DownloadBlock } from "./download/DownloadBlock";
+import { ServicesMobSlider } from "./sliders/ServicesMobSlider";
 
 export const ServicesSection = ({ locale } : {locale: string}) => {
 
@@ -19,6 +20,9 @@ export const ServicesSection = ({ locale } : {locale: string}) => {
                 <Service title={t("construction.title")} text={t("construction.text")} image={thirdService}/>
                 <Service title={t("repair.title")} text={t("repair.text")} image={firstService}/>
                 <Service title={t("other.title")} text={t("other.text")} image={secondService}/>
+            </div>
+            <div className={style.mobContainer}>
+                <ServicesMobSlider />
             </div>
             <DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} />
         </section>

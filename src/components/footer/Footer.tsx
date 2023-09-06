@@ -5,7 +5,7 @@ import { InstagramIcon } from "../../assets/icons/InstagramIcon";
 import { TikTokIcon } from "../../assets/icons/TikTokIcon";
 import { useTranslations } from "next-intl";
 
-export const Footer = ({locale} : {locale: string}) => {
+export const Footer = () => {
 
     const t = useTranslations('footer');
 

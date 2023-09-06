@@ -9,6 +9,7 @@ export const Header = ({locale} : {locale: string}) => {
 
     const headerRef = useRef<HTMLHeadElement>(null);
     const [activeSection, setActiveSection] = useState('');
+    const [isOpened, setIsOpened] = useState<boolean>(false);
     const t = useTranslations('header');
 
     useEffect(() => {
@@ -83,7 +84,40 @@ export const Header = ({locale} : {locale: string}) => {
                         <li><Link title="RU" className={locale === "ru" ? style.active : ""} href={"/"} locale={"ru"}>RU</Link></li>
                     </ul>
                 </nav>
+                <nav className={style.navigationMob}>
+                    {!isOpened &&
+                        <div className={style.burger} onClick={() => setIsOpened(true)}>
+                            <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="35" height="5.60349" rx="1" fill="white"/>
+                                <rect y="9.69873" width="35" height="5.60349" rx="1" fill="white"/>
+                                <rect y="19.3965" width="35" height="5.60349" rx="1" fill="white"/>
+                            </svg>
+                        </div>
+                    }
+                </nav>
             </div>
+            {isOpened &&
+                <div className={style.mobNav}>
+                    <div className={style.mobContainer}>
+                        <div className={style.close}>
+                            <svg onClick={() => setIsOpened(false)} width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.578571 26.8934C0.964286 27.2791 1.35 27.4719 1.92857 27.4719C2.50714 27.4719 2.89286 27.2791 3.27857 26.8934L13.5 16.6719L23.7214 26.8934C24.1071 27.2791 24.6857 27.4719 25.0714 27.4719C25.4571 27.4719 26.0357 27.2791 26.4214 26.8934C27.1929 26.1219 27.1929 24.9648 26.4214 24.1933L16.2 13.9719L26.4214 3.75049C27.1929 2.97907 27.1929 1.82192 26.4214 1.0505C25.65 0.279067 24.4929 0.279067 23.7214 1.0505L13.5 11.2719L3.27857 1.0505C2.50714 0.279067 1.35 0.279067 0.578571 1.0505C-0.192857 1.82192 -0.192857 2.97907 0.578571 3.75049L10.8 13.9719L0.578571 24.1933C-0.192857 24.9648 -0.192857 26.1219 0.578571 26.8934Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <ul className={style.lang}>
+                            <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
+                            <li><Link title="RU" className={locale === "ru" ? style.active : ""} href={"/"} locale={"ru"}>RU</Link></li>
+                        </ul>
+                        <ul className={style.links}>
+                            <li><Link className={activeSection === "home" ? style.active : ""} title={t("home")} href={"/#home"}>{t("home")}</Link></li>
+                            <li><Link className={activeSection === "about" ? style.active : ""} title={t("about")} href={"/#about"}>{t("about")}</Link></li>
+                            <li><Link className={activeSection === "services" ? style.active : ""} title={t("services")} href={"/#services"}>{t("services")}</Link></li>
+                            <li><Link className={activeSection === "portfolio" ? style.active : ""} title={t("portfolio")} href={"/#portfolio"}>{t("portfolio")}</Link></li>
+                            <li><Link className={activeSection === "contacts" ? style.active : ""} title={t("contacts")} href={"/#contacts"}>{t("contacts")}</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            }
         </header>
     )
 }

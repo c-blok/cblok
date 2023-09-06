@@ -20,39 +20,94 @@
       display: flex;
       justify-content: flex-end;
       flex: 1;
-      .links {
-        justify-content: flex-end;
-        flex: 1;
-        gap: 3%;
-        display: flex;
-      }
 
-      a {
-        font-weight: 400;
-        font-size: 1.15em;
-        color: $bg;
-        transition: font-weight 1s ease;
-        &.active, &:hover {
-          font-weight: 800 !important;
-        }
-        &::after {
-          display: block;
-          content: attr(title);
-          font-weight: 800 !important;
-          height: 1px;
-          color: transparent;
-          overflow: hidden;
-          visibility: hidden;
-        }
-      }
-
-      .lang {
-        margin-left: 4%;
-        display: flex;
-        gap: 20px;
+      @media screen and (max-width: $small) {
+        display: none;
       }
 
     }
 
+    .navigationMob {
+      display: none;
+
+      @media screen and (max-width: $small) {
+        display: block;
+      }
+    }
+
+  }
+
+  .links {
+    justify-content: flex-end;
+    flex: 1;
+    gap: 3%;
+    display: flex;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 1.15em;
+    color: $bg;
+    transition: font-weight 1s ease;
+    &.active, &:hover {
+      font-weight: 800 !important;
+    }
+    &::after {
+      display: block;
+      content: attr(title);
+      font-weight: 800 !important;
+      height: 1px;
+      color: transparent;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  .lang {
+    margin-left: 4%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .mobNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(63, 63, 63, 0.80);
+    top: 0;
+
+    .mobContainer {
+      @include maxWrapper();
+      @include wrapper();
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      .close {
+        height: $headerHeight;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 4px;
+      }
+
+      .lang {
+        justify-content: flex-end;
+      }
+
+      .links {
+        flex-direction: column;
+        gap: 12px;
+        li {
+          text-align: right;
+        }
+      }
+
+      padding-bottom: 32px;
+    }
+
+    @media screen and (max-width: $small) {
+      display: block;
+    }
   }
 }

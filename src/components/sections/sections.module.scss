@@ -152,6 +152,19 @@ $titleHeight: 90px;
           width: 100%;
         }
       }
+
+      @media screen and (max-width: $small) {
+        flex-wrap: wrap;
+        .text, .image {
+          flex: unset;
+          width: 100%;
+        }
+        .text {
+          @include wrapper();
+          padding-top: 32px;
+          padding-bottom: 32px;
+        }
+      }
     }
   }
 
@@ -162,73 +175,104 @@ $titleHeight: 90px;
       width: 100%;
       height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
       display: flex;
+      @media screen and (max-width: $small) {
+        display: none;
+      }
+    }
+    .mobContainer {
+      height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
+      min-height: 400px;
+      max-height: 1200px;
+      display: none;
+      @media screen and (max-width: $small) {
+        display: block;
+      }
 
-      .service {
+      .slider {
+        width: 100%;
         height: 100%;
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-        flex: 1;
 
-        &:hover, &.opened {
-          .bg {
-            .dark {
-              background-color: rgba(63,63,63,0.8);
-            }
+        .service {
+
+
+          h3 {
+            font-size: 3.2vw;
           }
-        }
-
-        .bg {
-          height: 100%;
-
+          .text {
+            font-size: 2vw;
+          }
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: calc(100dvh - #{$headerHeight} - #{$titleHeight});
+            min-height: 400px;
+            max-height: 1200px;
           }
+        }
+      }
+    }
+    .service {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      flex: 1;
+
+      &:hover, &.opened {
+        .bg {
           .dark {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            background-color: rgba(63,63,63,0.5);
-
+            background-color: rgba(63,63,63,0.8);
           }
         }
+      }
 
-        svg {
-          width: 14%;
-          position: absolute;
-          bottom: 10px;
-          left: 50%;
-          transform: translate(-50%, 0) !important;
+      .bg {
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+        .dark {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          background-color: rgba(63,63,63,0.5);
 
-        color: $bg;
+        }
+      }
 
+      svg {
+        width: 14%;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0) !important;
+      }
+
+      color: $bg;
+
+      font-style: normal;
+      font-weight: 400;
+
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.2vw;
+      }
+
+      .text {
         font-style: normal;
         font-weight: 400;
-
-        h3 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          font-size: 1.2vw;
-        }
-
-        .text {
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-          width: 90%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          font-size: 1.2vw;
-        }
-
+        line-height: 150%;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.2vw;
       }
 
     }
@@ -243,10 +287,34 @@ $titleHeight: 90px;
 
   &.portfolio {
     .block {
+      height: unset;
       width: 100%;
       overflow: hidden;
       display: flex;
       min-height: 650px;
+      @media screen and (max-width: $small) {
+        flex-wrap: wrap;
+
+        .text, .slider {
+          flex: unset;
+          width: 100%;
+        }
+        .text {
+          order: 2;
+          min-height: 300px;
+          h2 {
+            font-size: 4vh;
+            margin-bottom: 24px;
+          }
+          p {
+            font-size: 2vh;
+            margin-bottom: 15px;
+          }
+        }
+        .slider {
+          order: 1;
+        }
+      }
     }
 
     .text {
@@ -283,33 +351,6 @@ $titleHeight: 90px;
     .slider {
       width: 57.5%;
       height: 100%;
-      position: relative;
-
-      .left, .right {
-        position: absolute;
-        z-index: 10;
-        width: 6%;
-        cursor: pointer;
-        padding-bottom: 6%;
-        background: $blockColor;
-        border-radius: 50%;
-
-        svg {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          position: absolute;
-          width: 100%;
-        }
-      }
-      .left {
-        top: 50%;
-        left: 16px;
-      }
-      .right {
-        top: 50%;
-        right: 16px;
-      }
 
       .slide {
         position: relative;
@@ -363,13 +404,15 @@ $titleHeight: 90px;
       @include maxWrapper();
       @include wrapper();
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       font-size: 1.45em;
 
       .partner {
         width: 15%;
-        min-width: 100px;
+        //min-width: 106px;
+        //min-width: 80px;
         padding-bottom: 15%;
         display: flex;
         justify-content: center;
@@ -385,6 +428,17 @@ $titleHeight: 90px;
           object-fit: contain;
         }
       }
+
+      @media screen and (max-width: $small) {
+        margin: unset;
+        padding: unset;
+        justify-content: flex-start;
+
+        .partner {
+          width: calc(100%/3);
+          padding-bottom: calc(100%/3);
+        }
+      }
     }
   }
 
@@ -392,6 +446,67 @@ $titleHeight: 90px;
     .block {
       height: calc(100dvh - #{$headerHeight});
       min-height: 900px;
+
+      @media screen and (max-width: $small) {
+        height: unset;
+        min-height: unset;
+
+        .box {
+          flex-wrap: wrap;
+          padding: 0 !important;
+          .info, .formBLock {
+            width: 100% !important;
+          }
+          .info {
+            .infoBox {
+              gap: 10px !important;
+            }
+            iframe {
+              order: 1;
+              height: 350px;
+              width: 100%;
+              margin-top: 0 !important;
+            }
+            h2 {
+              margin-top: 37px !important;
+              margin-bottom: 20px !important;
+              font-size: 4vh !important;
+              @include wrapper();
+              order: 2;
+            }
+            h3 {
+              margin-top: unset !important;
+              font-size: 3.2vh !important;
+              margin-bottom: 10px !important;
+              @include wrapper();
+              order: 3;
+            }
+            p {
+              font-size: 2.2vh !important;
+              @include wrapper();
+              order: 4;
+            }
+          }
+          .formBLock {
+            padding-bottom: 102px;
+            .formBLockBox {
+              h4 {
+                font-size: 3.2vh !important;
+              }
+
+              p {
+                font-size: 2vh !important;
+              }
+              .form {
+                width: 100% !important;
+                label, input {
+                  font-size: 2vh !important;
+                }
+              }
+            }
+          }
+        }
+      }
 
       .box {
         @include maxWrapper();
@@ -539,7 +654,56 @@ $titleHeight: 90px;
         }
       }
 
+      @media screen and (max-width: $small) {
+        flex-wrap: wrap;
+        .pdf {
+          order: 2;
+          width: 20%;
+          svg {
+            width: 100%;
+          }
+        }
+        .button {
+          order: 3;
+        }
+        .text {
+          order: 1;
+          width: 100%;
+        }
+      }
     }
   }
 
+}
+
+.slider {
+  position: relative;
+
+  .left, .right {
+    position: absolute;
+    z-index: 10;
+    width: 6%;
+    cursor: pointer;
+    padding-bottom: 6%;
+    background: $blockColor;
+    border-radius: 50%;
+
+    svg {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .left {
+    top: 50%;
+    left: 16px;
+  }
+
+  .right {
+    top: 50%;
+    right: 16px;
+  }
 }
