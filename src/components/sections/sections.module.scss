@@ -161,8 +161,12 @@ $titleHeight: 90px;
         }
         .text {
           @include wrapper();
-          padding-top: 32px;
-          padding-bottom: 32px;
+          gap: 40px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          h2 {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -463,10 +467,10 @@ $titleHeight: 90px;
               gap: 10px !important;
             }
             iframe {
-              order: 1;
+              order: 5;
               height: 350px;
               width: 100%;
-              margin-top: 0 !important;
+              margin-top: 35px !important;
             }
             h2 {
               margin-top: 37px !important;
@@ -497,6 +501,7 @@ $titleHeight: 90px;
 
               p {
                 font-size: 2vh !important;
+                margin-bottom: 25px !important;
               }
               .form {
                 width: 100% !important;
