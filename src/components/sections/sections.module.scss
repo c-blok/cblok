@@ -54,9 +54,22 @@ $titleHeight: 90px;
           max-width: 55vh;
           text-align: center;
           font-style: normal;
-          font-weight: 900;
+          font-weight: 400;
           line-height: normal;
         }
+
+        @media screen and (max-width: $small + 200) {
+          width: 20%;
+          svg {
+            height: unset;
+            width: 100%;
+          }
+        }
+
+        @media screen and (max-width: $small - 200) {
+          width: 40%;
+        }
+
       }
 
       .socials {

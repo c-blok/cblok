@@ -16,6 +16,15 @@
     height: 100%;
     align-items: center;
 
+    .logo {
+      @media screen and (max-width: $small) {
+        width: 25%;
+        svg {
+          width: 100%;
+        }
+      }
+    }
+
     .navigation {
       display: flex;
       justify-content: flex-end;
