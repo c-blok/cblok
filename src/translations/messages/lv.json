@@ -44,5 +44,38 @@
   },
   "partners": {
     "title": "MŪSU PARNIERI"
+  },
+  "contacts": {
+    "title": "MŪSU KONTAKTI",
+    "h3": "Kā mūms atrast?",
+    "pCom": "SIA “C-BLOK”",
+    "phone": "Zvaniet:",
+    "email": "Rakstiet:",
+    "form": {
+      "h4": "Izsauс mūsu speciālistu un saņem konsultāciju!",
+      "p": "*Lūdzu, aizpildiet zemāk esošo veidlapu, un kāds no mūsu pārstāvjiem tuvākajā laikā ar Jums sazināsies",
+      "name": "Vārds*",
+      "email": "E-pasts*",
+      "phone": "Telefons*",
+      "time": "Laiks, kurā Jums būs ērti, lai mēs ar Jums sazinājamies:",
+      "send": "SUTĪT",
+      "error": "KĻŪDA",
+      "success": "NOSŪTĪTS"
+    }
+  },
+  "footer": {
+    "b1": {
+      "f": "SIA “C-BLOK”",
+      "s": "Reģ num.: 40203207255",
+      "t": "PVN num.: LV40203207255"
+    },
+    "b2": {
+      "f": "Maksājumiem:",
+      "s": "LV17HABA0551046589005",
+      "t": "A/S Swedbank: HABALV22"
+    },
+    "b3": {
+      "f": "Kontaktinformācija:"
+     }
   }
 }
