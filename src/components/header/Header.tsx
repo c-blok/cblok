@@ -40,8 +40,8 @@ export const Header = ({locale} : {locale: string}) => {
 
             if (headerRef.current && langRef.current && langBgRef.current) {
                 if (y > 0) {
-                    langRef.current.style.backgroundColor = "#3F4F4C"
-                    langBgRef.current.style.backgroundColor = "#3F4F4C"
+                    langRef.current.style.backgroundColor = "#43625D"
+                    langBgRef.current.style.backgroundColor = "#43625D"
                     headerRef.current.style.backgroundColor = headerBg
                 } else {
                     langBgRef.current.style.backgroundColor = ""
@@ -54,8 +54,8 @@ export const Header = ({locale} : {locale: string}) => {
         window.addEventListener("scroll", scrollCheck);
 
         if (window.scrollY > 0 && headerRef.current && langRef.current && langBgRef.current) {
-            langRef.current.style.backgroundColor = "#3F4F4C"
-            langBgRef.current.style.backgroundColor = "#3F4F4C"
+            langRef.current.style.backgroundColor = "#43625D"
+            langBgRef.current.style.backgroundColor = "#43625D"
             headerRef.current.style.backgroundColor = headerBg
         }
 
