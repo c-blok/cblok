@@ -86,8 +86,7 @@ export const GallerySlider = () => {
             <div className={style.pcDots}>
                 {slides.map((sl: StaticImageData[], i: number) => (
                     <div key={i} className={style.dot + " " + (activeSlide === i ? style.active : "")} onClick={() => handleSliderButtonClick(i)}/>
-                ))
-                }
+                ))}
             </div>
         </div>
     )
