@@ -32,26 +32,37 @@ export const ServicesMobSlider = () => {
 
     const handleSliderButtonClick = (index: number) => {
         if (sliderRef.current)
-            sliderRef.current.slickGoTo(activeSlide + index);
+            sliderRef.current.slickGoTo(index);
     };
 
     return (
         <div className={style.slider}>
-            <div className={style.left} onClick={() => handleSliderButtonClick(-1)}>
-                <ArrowIcon rotate={"90deg"} />
-            </div>
-            <div className={style.right} onClick={() => handleSliderButtonClick(1)}>
-                <ArrowIcon rotate={"-90deg"} />
-            </div>
             <Slider
                 beforeChange={beforeChangeHandler}
                 {...settings}
                 ref={sliderRef}
             >
-                <Service title={t("construction.title")} text={t("construction.text")} image={thirdService}/>
-                <Service title={t("repair.title")} text={t("repair.text")} image={firstService}/>
-                <Service title={t("other.title")} text={t("other.text")} image={secondService}/>
+                <Service title={t("construction.title")} text={t("construction.text")} image={firstService}/>
+                <Service title={t("repair.title")} text={t("repair.text")} image={secondService}/>
+                <Service title={t("other.title")} text={t("other.text")} image={thirdService}/>
             </Slider>
+            <div className={style.dots}>
+                <div className={activeSlide === 0 ? style.active : ""} onClick={() => handleSliderButtonClick(0)}>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#6B6B6B"/>
+                    </svg>
+                </div>
+                <div className={activeSlide === 1 ? style.active : ""} onClick={() => handleSliderButtonClick(1)}>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#6B6B6B"/>
+                    </svg>
+                </div>
+                <div className={activeSlide === 2 ? style.active : ""} onClick={() => handleSliderButtonClick(2)}>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#6B6B6B"/>
+                    </svg>
+                </div>
+            </div>
         </div>
     )
 }

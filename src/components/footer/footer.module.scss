@@ -9,6 +9,10 @@
   font-size: 0.8vw;
   font-weight: 400;
 
+  @media screen and (max-width: $small + 100) {
+    margin-top: $headerSmall;
+  }
+
   a {
     &:hover {
       transition: color $transitionTime;

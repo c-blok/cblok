@@ -17,14 +17,14 @@ export const ServicesSection = ({ locale } : {locale: string}) => {
                 <h2>{t("title")}</h2>
             </div>
             <div className={style.container}>
-                <Service title={t("construction.title")} text={t("construction.text")} image={thirdService}/>
-                <Service title={t("repair.title")} text={t("repair.text")} image={firstService}/>
-                <Service title={t("other.title")} text={t("other.text")} image={secondService}/>
+                <Service title={t("construction.title")} text={t("construction.text")} image={firstService}/>
+                <Service title={t("repair.title")} text={t("repair.text")} image={secondService}/>
+                <Service title={t("other.title")} text={t("other.text")} image={thirdService}/>
             </div>
             <div className={style.mobContainer}>
                 <ServicesMobSlider />
             </div>
-            <DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} />
+            <DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} h5={t("h5")} />
         </section>
     )
 }

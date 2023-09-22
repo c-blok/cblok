@@ -8,18 +8,21 @@
     "home": "Galvenā",
     "about": "Par mums",
     "services": "Pakalpojumi",
-    "portfolio": "Mūsu projekti",
-    "contacts": "Kontakti"
+    "gallery": "Galerija",
+    "contacts": "Kontakti",
+    "mission": "Mūsu misija",
+    "menu": "izvēlne"
   },
   "home": {
     "h1": "CONSTRUCRION COMPANY"
   },
   "about": {
     "h2": "PAR MUMS",
-    "text": "Jūsu rīcībā ir C-BLOK! Uzņēmums nodarbojas ar visu celtniecības un remontdarbu klāstu.<br/>Nodarbojamies ar personalu projektu veidošanu un visu dokumentāciju uzņemšanu.<br/><br/>Palīdzēsim mēbeļu salikšanā, atjaunosim dzīvokļu interjerus, savācam moduļu mājas, renovējam, būvējam terases un mājas līdz atslēgai.<br/>Mūsu partneri un uzkrātā pieredze ļauj mums tikt galā ar jebkuras sarežģītības objektu noteiktajos termiņos.",
+    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu celtniecības un remontdarbu klāstu.<br/><br/>Mēs nodarbojamies ar personīgo projektu veidošanu un visu dokumentāciju ņemam uz sevi.<br/><br/>Palīdzēsim salikt mēbeles, renovēt dzīvokļu interjerus, salikt moduļu mājas, renovēt, izbūvēt terases un mājas “zem atslēgas”<br/><br/>Mūsu partneri un uzkrātā pieredze ļauj tikt galā laicīgi ar jebkuras sarežģītības objektu.",
     "h3": "IEĶĪLĀJIET UZTICAMĪBAS BLOKU SAVĀ CELTNIECĪBĀ!",
-    "downloadTitle": "Vairāk Par Mums",
-    "downloadText": "Mēs esam pieredzes bagāti renovācijas speciālisti, kas ar lepnumu darbojamies, lai atjaunotu un uzlabotu jūsu dzīves telpas. Ar mūsu radošumu un rūpību par detaļām mēs radām skaistus un funkcionālus interjerus, kas iepriecina mūsu klientus. Uzziniet vairāk par mums un mūsu darbu, kas pārvērš sapņus par mājām realitātē!",
+    "contactUs": "Sazināties ar mums",
+    "downloadTitle": "Lejupielādējiet prezentāciju par “C-BLOK”",
+    "downloadText": "Būvuzņēmuma “C-BLOK” prezentācija ietver informāciju par mūsu vērtībām, pieredzi, darba kvalitāti un mērķiem.",
     "downloadButton": "Lejupielādēt PDF"
   },
   "services": {
@@ -36,21 +39,23 @@
       "title": "Papildu pakalpojumi",
       "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana (specialisti, tehnikas meklēšana utt.)<br/><br/>• Mantu pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Apkures sistēmas, katli<br/><br/>• Mēbeļu izgatavošana"
     },
-    "downloadTitle": "Vairāk Par Mūsu Pakalpojumiem",
-    "downloadText": "Mēs esam pieredzes bagāti renovācijas speciālisti, kas ar lepnumu darbojamies, lai atjaunotu un uzlabotu jūsu dzīves telpas. Ar mūsu radošumu un rūpību par detaļām mēs radām skaistus un funkcionālus interjerus, kas iepriecina mūsu klientus. Uzziniet vairāk par mums un mūsu darbu, kas pārvērš sapņus par mājām realitātē!"
+    "downloadTitle": "“C-BLOK” visu pakalpojumu saraksts",
+    "downloadText": "Dokuments satur visu pakalpojumu klāstu, ko sniedz uzņēmums “C-BLOK”. Mūsu pieredzējušo speciālistu komanda ir gatava īstenot jebkuras sarežģītības projektus.",
+    "h5": "NO IDEJAS LĪDZ BRĪDIM “IETEICA C-BLOK VISIEM KAM VARĒJA”"
   },
-  "portfolio": {
-    "title": "MŪSU PROJEKTI"
+  "mission": {
+    "title": "MŪSU MISIJA",
+    "text": "Mēs esam  C-BLOK- jūsu uzticamais partneris būvdarbos!<br/><br/>Komandas uzdevums ir pārvērst parastās dzīvokļu telpas par iedvesmojošām un modernām dzīves vietām, kur jums būs patīkami gan dīzvot, gan strādāt. No mazajiem dzīvokļiem līdz lielām dzīvojamo platību telpām. Mēs esam palīdzējuši mūsu klientiem sasniegt viņu sapņus ar mūsu rokām.<br/><br/>Mēs lepojamies ar komandas paveikto darbu daudzveidību un kvalitāti.<br/><br/>Mūsu mērķis - ir radīt telpas, kas atspoguļo mūsu klientu vēlmes un personību. Mēs apvienojam inovatīvas idejas ar praktiskiem risinājumiem, lai radītu funkcionālu, estētisku un dzīvotspējīgu dzīves vidi.<br/><br/>Nelieki teikts, ka C-BLOK vadība rūpējas par mūsu klientiem un darbiniekiem, lai visiem būt prieks strādāt  ar mūsu uzņēmumu.<br/><br/>Ja jūs gribat sadarboties ar C-BLOK uzņēmumu kā klients vai partneris rakstiet uz mūsu korporatīvo e-pastu un mēs jums atbildēsim 48 stundu laikā."
   },
-  "partners": {
-    "title": "MŪSU PARNIERI"
+  "gallery": {
+    "title": "MŪSU OBJEKTU GALERIJA"
   },
   "contacts": {
-    "title": "KONTAKTI",
+    "title": "MŪSU KONTAKTI",
     "h3": "Kā mūms atrast?",
     "pCom": "SIA “C-BLOK”",
-    "phone": "Zvaniet:",
-    "email": "Rakstiet:",
+    "phone": "Tālrunis",
+    "email": "E-mail",
     "form": {
       "h4": "Izsauс mūsu speciālistu un saņem konsultāciju!",
       "p": "*Lūdzu, aizpildiet zemāk esošo veidlapu, un kāds no mūsu pārstāvjiem tuvākajā laikā ar Jums sazināsies",

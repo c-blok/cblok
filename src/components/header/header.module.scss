@@ -7,6 +7,11 @@
   height: $headerHeight;
   transition: background-color $transitionTime ease;
 
+  @media screen and (max-width: $small + 100) {
+    background-color: $headerColor;
+    height: $headerSmall;
+  }
+
   .container {
     margin: auto;
     @include maxWrapper();
@@ -17,10 +22,10 @@
     align-items: center;
 
     .logo {
-      @media screen and (max-width: $small) {
+      @media screen and (max-width: $small + 100) {
         width: 25%;
         svg {
-          width: 100%;
+          width: 50px;
         }
       }
     }
@@ -28,32 +33,43 @@
     .navigation {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       flex: 1;
+      height: 100%;
 
-      @media screen and (max-width: $small) {
-        display: none;
+      @media screen and (max-width: $small + 100) {
+        .links {
+          display: none;
+        }
       }
 
     }
 
     .navigationMob {
       display: none;
+      justify-content: center;
+      flex: 1;
 
-      @media screen and (max-width: $small) {
-        display: block;
+      button {
+        text-transform: uppercase !important;
+      }
+
+      @media screen and (max-width: $small + 100) {
+        display: flex;
       }
     }
 
   }
 
   .links {
-    justify-content: flex-end;
+    justify-content: center;
     flex: 1;
     gap: 3%;
     display: flex;
+    text-transform: uppercase;
   }
 
-  a {
+  a, button {
     font-weight: 400;
     font-size: 1.15em;
     color: $bg;
@@ -75,15 +91,23 @@
   .lang {
     margin-left: 4%;
     display: flex;
+    align-items: center;
+    @include wrapper();
+    margin-right: -30px;
     gap: 20px;
+    height: 100%;
+
+    @media screen and (max-width: $small + 100) {
+      background-color: $blockColor;
+    }
   }
 
   .mobNav {
     display: none;
     position: fixed;
     width: 100%;
-    background-color: rgba(63, 63, 63, 0.80);
-    top: 0;
+    background-color: $headerColor;
+    top: $headerSmall;
 
     .mobContainer {
       @include maxWrapper();
@@ -91,31 +115,21 @@
       display: flex;
       gap: 20px;
       flex-direction: column;
-
-      .close {
-        height: $headerHeight;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 4px;
-      }
-
-      .lang {
-        justify-content: flex-end;
-      }
+      align-items: center;
 
       .links {
+        padding-top: 32px;
         flex-direction: column;
         gap: 15px;
         li {
-          text-align: right;
+          text-align: center;
         }
       }
 
       padding-bottom: 32px;
     }
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $small + 100) {
       display: block;
     }
   }

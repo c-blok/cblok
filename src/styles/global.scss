@@ -6,9 +6,10 @@ $gray2: #4F4F4F;
 $active: #B3B3B3;
 $neutral: #3F4F4C;
 $blockColor: #43625D;
-$headerColor: #43484B;
+$headerColor: #2E3133;
 
 $headerHeight: 106px;
+$headerSmall: 75px;
 
 $transitionTime: 0.5s;
 
@@ -21,8 +22,46 @@ $transitionTime: 0.5s;
   padding: 0 30px;
 }
 
+@mixin paddingTopMarginBottom() {
+  padding-top: $headerHeight;
+  margin-bottom: -$headerHeight;
+
+  @media screen and (max-width: $small + 100) {
+    padding-top: $headerSmall;
+    margin-bottom: -$headerSmall;
+  }
+}
+
+@mixin fullHeight($minus: 0px) {
+  height: calc(100dvh - #{$headerHeight} - #{$minus});
+
+  @media screen and (max-width: $small + 100) {
+    height: calc(100dvh - #{$headerSmall} - #{$minus});
+  }
+}
+
+@mixin h2() {
+  font-size: 2.3em;
+  @media screen and (max-width: $small + 100) {
+    font-size: 1.4em;
+  }
+}
+
+@mixin h3() {
+  font-size: 1.5em;
+  @media screen and (max-width: $small + 100) {
+    font-size: 1em;
+  }
+}
+@mixin text() {
+  font-size: 1.1em;
+  @media screen and (max-width: $small + 100) {
+    font-size: 0.7em;
+  }
+}
 
 .button {
+  @include text();
   height: fit-content;
   display: flex;
   align-items: center;
@@ -36,6 +75,15 @@ $transitionTime: 0.5s;
   color: $bg;
   white-space: nowrap;
   transition: border-color $transitionTime, color $transitionTime, background-color $transitionTime;
+
+  @media screen and (max-width: $small) {
+    padding: 12px 24px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   svg {
     path {
       transition: stroke $transitionTime;
