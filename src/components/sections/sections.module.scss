@@ -209,6 +209,9 @@ $titleHeight: 90px;
         }
         .image {
           max-height: 331px;
+          img {
+            position: relative;
+          }
         }
         .text {
           @include wrapper();
