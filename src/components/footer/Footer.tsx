@@ -1,5 +1,4 @@
 import style from './footer.module.scss';
-import Link from 'next-intl/link';
 import { FacebookIcon } from "../../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../../assets/icons/InstagramIcon";
 import { TikTokIcon } from "../../assets/icons/TikTokIcon";
@@ -31,15 +30,15 @@ export const Footer = () => {
                         </defs>
                     </svg>
                     <div className={style.socials}>
-                        <Link href={"https://www.facebook.com/cblok.lv"} target={"_blank"}>
+                        <a href={"https://www.facebook.com/cblok.lv"} target={"_blank"}>
                             <FacebookIcon />
-                        </Link>
-                        <Link href={"https://www.instagram.com/cblok.lv/"} target={"_blank"}>
+                        </a>
+                        <a href={"https://www.instagram.com/cblok.lv/"} target={"_blank"}>
                             <InstagramIcon />
-                        </Link>
-                        <Link href={"https://www.tiktok.com/@cblok.lv"} target={"_blank"}>
+                        </a>
+                        <a href={"https://www.tiktok.com/@cblok.lv"} target={"_blank"}>
                             <TikTokIcon />
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className={style.text}>
@@ -54,15 +53,15 @@ export const Footer = () => {
                 </div>
                 <div className={style.text}>
                     <p><span>{t("b3.f")}</span></p>
-                    <Link href={"tel:+37120004922"}>+371 20004922</Link>
-                    <Link href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</Link>
+                    <a href={"tel:+37120004922"}>+371 20004922</a>
+                    <a href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</a>
                 </div>
             </div>
             <div className={style.centered}>
                 <p>© {new Date().getFullYear()} C-Blok. All rights reserved</p>
-                <Link href={"https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations_en"} target={"_blank"}>
+                <a href={"https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations_en"} target={"_blank"}>
                     Cookie Policy
-                </Link>
+                </a>
             </div>
         </footer>
     )
