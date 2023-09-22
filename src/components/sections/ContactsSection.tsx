@@ -27,15 +27,15 @@ export const ContactsSection = ({ locale } : {locale: string}) => {
                                 <p className={style.field}>
                                     <PhoneIcon />
                                     <span className={style.f}>
-                                        <Link href={"tel:+37120004922"}>{t("phone")}</Link>
-                                        <Link href={"tel:+37120004922"}>+371 20 004 922</Link>
+                                        <a href={"tel:+37120004922"}>{t("phone")}</a>
+                                        <a href={"tel:+37120004922"}>+371 20 004 922</a>
                                     </span>
                                 </p>
                                 <p className={style.field}>
                                     <EmailIcon />
                                     <span className={style.f}>
-                                        <Link href={"mailto:cblok@inbox.lv"}>{t("email")}</Link>
-                                        <Link href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</Link>
+                                        <a href={"mailto:cblok@inbox.lv"}>{t("email")}</a>
+                                        <a href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</a>
                                     </span>
                                 </p>
                                 <iframe

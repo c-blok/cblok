@@ -8,6 +8,8 @@ import { useTranslations } from "next-intl";
 export const Header = ({locale} : {locale: string}) => {
 
     const headerRef = useRef<HTMLHeadElement>(null);
+    const langRef = useRef<HTMLUListElement>(null);
+    const langBgRef = useRef<HTMLDivElement>(null);
     const [activeSection, setActiveSection] = useState('');
     const [isOpened, setIsOpened] = useState<boolean>(false);
     const t = useTranslations('header');
@@ -36,10 +38,14 @@ export const Header = ({locale} : {locale: string}) => {
         const scrollCheck = () => {
             const y = window.scrollY
 
-            if (headerRef.current) {
+            if (headerRef.current && langRef.current && langBgRef.current) {
                 if (y > 0) {
+                    langRef.current.style.backgroundColor = "#3F4F4C"
+                    langBgRef.current.style.backgroundColor = "#3F4F4C"
                     headerRef.current.style.backgroundColor = headerBg
                 } else {
+                    langBgRef.current.style.backgroundColor = ""
+                    langRef.current.style.backgroundColor = ""
                     headerRef.current.style.backgroundColor = ""
                 }
             }
@@ -47,7 +53,9 @@ export const Header = ({locale} : {locale: string}) => {
 
         window.addEventListener("scroll", scrollCheck);
 
-        if (window.scrollY > 0 && headerRef.current) {
+        if (window.scrollY > 0 && headerRef.current && langRef.current && langBgRef.current) {
+            langRef.current.style.backgroundColor = "#3F4F4C"
+            langBgRef.current.style.backgroundColor = "#3F4F4C"
             headerRef.current.style.backgroundColor = headerBg
         }
 
@@ -83,9 +91,10 @@ export const Header = ({locale} : {locale: string}) => {
                     <div className={style.navigationMob}>
                         <button onClick={() => setIsOpened(!isOpened)}>izvēlne</button>
                     </div>
-                    <ul className={style.lang}>
+                    <ul className={style.lang} ref={langRef}>
                         <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
                         <li><Link title="RU" className={locale === "ru" ? style.active : ""} href={"/"} locale={"ru"}>RU</Link></li>
+                        <div className={style.bgLang} ref={langBgRef}/>
                     </ul>
                 </nav>
             </div>
