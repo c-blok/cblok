@@ -56,7 +56,7 @@ $transitionTime: 0.5s;
 @mixin text() {
   font-size: 1.1em;
   @media screen and (max-width: $small + 100) {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
 }
 

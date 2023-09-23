@@ -14,11 +14,11 @@
     "menu": "izvēlne"
   },
   "home": {
-    "h1": "CONSTRUCRION COMPANY"
+    "h1": "CONSTRUCTION COMPANY"
   },
   "about": {
     "h2": "PAR MUMS",
-    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu celtniecības un remontdarbu klāstu.<br/><br/>Mēs nodarbojamies ar personīgo projektu veidošanu un visu dokumentāciju ņemam uz sevi.<br/><br/>Palīdzēsim salikt mēbeles, renovēt dzīvokļu interjerus, salikt moduļu mājas, renovēt, izbūvēt terases un mājas “zem atslēgas”<br/><br/>Mūsu partneri un uzkrātā pieredze ļauj tikt galā laicīgi ar jebkuras sarežģītības objektu.",
+    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu celtniecības un remontdarbu klāstu.<br/><br/>Mēs nodarbojamies ar personīgo projektu veidošanu un visu dokumentāciju ņemam uz sevi.<br/><br/>Palīdzēsim salikt mēbeles, renovēt dzīvokļu interjerus, salikt moduļu mājas, renovēt, izbūvēt terases un mājas “zem atslēgas”.<br/><br/>Mūsu partneri un uzkrātā pieredze ļauj tikt galā laicīgi ar jebkuras sarežģītības objektu.",
     "h3": "IEĶĪLĀJIET UZTICAMĪBAS BLOKU SAVĀ CELTNIECĪBĀ!",
     "contactUs": "Sazināties ar mums",
     "downloadTitle": "Lejupielādējiet prezentāciju par “C-BLOK”",
@@ -29,15 +29,15 @@
     "title": "Pakalpojumi",
     "construction": {
       "title": "Celtniecības darbi",
-      "text": "• Māju būvniecība<br/><br/>• Moduļu māju uzstadīšana<br/><br/>• Terases būvēšana<br/><br/>• Fundamenta darbi<br/><br/>• Saimniecības ēkas<br/><br/>• Jumta darbi<br/><br/>• Demontāža"
+      "text": "• Māju būvniecība<br/><br/>• Moduļu māju uzstādīšana<br/><br/>• Terases būvēšana<br/><br/>• Fundamenta darbi<br/><br/>• Saimniecības ēkas<br/><br/>• Jumta darbi<br/><br/>• Demontāža"
     },
     "repair": {
-      "title": "Remont darbi",
-      "text": "• Dekoratīvais segums uz sienām<br/><br/>• Mēbeļu uzbūve<br/><br/>• Grīdu ieklāšana<br/><br/>• Sienu krāsošana<br/><br/>• Tapešu līmēšana<br/><br/>• Ofisa telpas renovācija<br/><br/>• Fasādes darbi"
+      "title": "Remontdarbi",
+      "text": "• Dekoratīvais segums uz sienām<br/><br/>• Mēbeļu uzbūve<br/><br/>• Grīdu ieklāšana<br/><br/>• Sienu krāsošana<br/><br/>• Tapešu līmēšana<br/><br/>• Biroja telpas renovācija<br/><br/>• Fasādes darbi"
     },
     "other": {
       "title": "Papildu pakalpojumi",
-      "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana (specialisti, tehnikas meklēšana utt.)<br/><br/>• Mantu pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Apkures sistēmas, katli<br/><br/>• Mēbeļu izgatavošana"
+      "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana (speciālisti, tehnikas meklēšana utt.)<br/><br/>• Mantu pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Apkures sistēmas, katli<br/><br/>• Mēbeļu izgatavošana"
     },
     "downloadTitle": "“C-BLOK” visu pakalpojumu saraksts",
     "downloadText": "Dokuments satur visu pakalpojumu klāstu, ko sniedz uzņēmums “C-BLOK”. Mūsu pieredzējušo speciālistu komanda ir gatava īstenot jebkuras sarežģītības projektus.",
@@ -45,7 +45,7 @@
   },
   "mission": {
     "title": "MŪSU MISIJA",
-    "text": "Mēs esam  C-BLOK- jūsu uzticamais partneris būvdarbos!<br/><br/>Komandas uzdevums ir pārvērst parastās dzīvokļu telpas par iedvesmojošām un modernām dzīves vietām, kur jums būs patīkami gan dīzvot, gan strādāt. No mazajiem dzīvokļiem līdz lielām dzīvojamo platību telpām. Mēs esam palīdzējuši mūsu klientiem sasniegt viņu sapņus ar mūsu rokām.<br/><br/>Mēs lepojamies ar komandas paveikto darbu daudzveidību un kvalitāti.<br/><br/>Mūsu mērķis - ir radīt telpas, kas atspoguļo mūsu klientu vēlmes un personību. Mēs apvienojam inovatīvas idejas ar praktiskiem risinājumiem, lai radītu funkcionālu, estētisku un dzīvotspējīgu dzīves vidi.<br/><br/>Nelieki teikts, ka C-BLOK vadība rūpējas par mūsu klientiem un darbiniekiem, lai visiem būt prieks strādāt  ar mūsu uzņēmumu.<br/><br/>Ja jūs gribat sadarboties ar C-BLOK uzņēmumu kā klients vai partneris rakstiet uz mūsu korporatīvo e-pastu un mēs jums atbildēsim 48 stundu laikā."
+    "text": "Mēs esam kompānija “C-BLOK” - Jūsu uzticamais partneris celtniecības un remonta darbos!<br/><br/>Mūsu uzdevums ir pārvērst parastās dzīvojamās telpas par modernām un darbam un dzīvei ergonomiskām telpām. No pašiem mazākajiem līdz lieliem projektiem.<br/><br/>“C-BLOK” palīdz realizēt klientu sapņus realitātē, ar mūsu celtniecības brigādes drošām rokām! Mēs esam lepni, ka mūsu komanda ir tik daudzveidīga, ka var izpildīt jebkuras gaumes pieprasījumu!<br/><br/>Mūsu uzdevums: izgatavot objektus tā, lai tie atspoguļotu mūsu klientu idejas un personīgo zīmolu vislabākajā veidā.<br/><br/>Mēs apvienojam intonatīvas idejas ar praktiskiem risinājumiem, lai radītu dzīvei un darbam piemērojamas telpas.<br/><br/>Turklāt kompānijas “C-BLOK” vadītājs rūpējas gan par klienta komfortu, gan saviem darbiniekiem, lai visiem būtu prieks strādāt ar mūsu kompāniju!"
   },
   "gallery": {
     "title": "MŪSU OBJEKTU GALERIJA"
