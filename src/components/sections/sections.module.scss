@@ -335,20 +335,25 @@ $titleHeight: 90px;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 1.2vw;
+        font-size: 1.3vw;
         font-weight: 400 !important;
+        word-break: keep-all;
+        width: 90%;
+        text-align: center;
       }
 
       .text {
         font-style: normal;
         font-weight: 400;
-        line-height: 150%;
+        line-height: 100%;
+        text-align: left !important;
         width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 1.2vw;
+        font-size: 1.3vw;
+        text-transform: uppercase;
       }
 
     }

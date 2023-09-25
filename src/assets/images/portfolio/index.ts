@@ -18,12 +18,6 @@ import img17 from "./17.png";
 import img18 from "./18.png";
 import img19 from "./19.png";
 import img20 from "./20.png";
-import img21 from "./21.png";
-import img22 from "./22.png";
-import img23 from "./23.png";
-import img24 from "./24.png";
-import img25 from "./25.png";
-import img26 from "./26.png";
 
 export const portfolio = [
     img1,
@@ -46,10 +40,4 @@ export const portfolio = [
     img18,
     img19,
     img20,
-    img21,
-    img22,
-    img23,
-    img24,
-    img25,
-    img26,
 ]

@@ -16,7 +16,7 @@ export const AboutSection = ({ locale } : {locale: string}) => {
                     <h2>{t("h2")}</h2>
                     <p dangerouslySetInnerHTML={{ __html: t("text") || "" }}/>
                     <h3>{t("h3")}</h3>
-                    <a href={"tel:+37120004922"} className={style.button}>
+                    <a href={"tel:+37120004922"} className={style.button + " " + style.upperCase}>
                         <PhoneIcon />
                         {t("contactUs")}
                     </a>

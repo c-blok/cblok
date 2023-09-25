@@ -23,7 +23,7 @@ export const Service = ({ image, title, text }: ServiceProps) => {
                 <div className={style.dark}/>
             </div>
             {!opened ?
-                <h3>{title}</h3>
+                <h3 className={style.upperCase}>{title}</h3>
                 :
                 <div className={style.text} dangerouslySetInnerHTML={{__html: text}}/>
             }
