@@ -292,6 +292,7 @@ $titleHeight: 90px;
             text-align: center;
             font-size: 3.5vw;
           }
+
           img {
             @include fullHeight($titleHeight);
             min-height: 400px;
