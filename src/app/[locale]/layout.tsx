@@ -35,7 +35,7 @@ export async function generateMetadata({params}: {params: { locale: string }}): 
     },
     openGraph: {
       type: "website",
-      images: ['/favicon.ico'],
+      images: ['/logo.png'],
       siteName: "C-BLOCK",
       locale: params.locale,
       title: t('title'),
