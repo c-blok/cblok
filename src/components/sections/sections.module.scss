@@ -265,8 +265,24 @@ $titleHeight: 90px;
 
         .service {
 
-          svg {
-            display: none;
+
+          &:hover.opened {
+            .bg {
+              .dark {
+                background-color: rgba(63,63,63,0.8) !important;
+              }
+            }
+          }
+          &:hover {
+            .bg {
+              .dark {
+                background-color: rgba(63,63,63,0.5) !important;
+              }
+            }
+          }
+
+          .hand {
+            bottom: 10%;
           }
 
           h3 {
@@ -314,6 +330,48 @@ $titleHeight: 90px;
           top: 0;
           background-color: rgba(63,63,63,0.5);
 
+        }
+      }
+
+      &.opened {
+        .hand {
+          display: none;
+        }
+      }
+
+      .hand {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%, 0) !important;
+        width: 13%;
+
+        svg {
+          width: 100%;
+          position: relative;
+          overflow: visible;
+          bottom: unset;
+          left: unset;
+          transform: translate(-5%, 0) !important;
+
+          path {
+            &:last-of-type {
+              //transform: scale(1.5) translateX(-14%) translateY(-20%);
+              animation: tap 2s infinite ease-in-out;
+              @keyframes tap {
+                0% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(-10%);
+                  fill: $neutral;
+                }
+                0% {
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
         }
       }
 
