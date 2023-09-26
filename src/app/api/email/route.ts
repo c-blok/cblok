@@ -17,7 +17,7 @@ export async function POST(req: Request) {
         // Опции письма
         const mailOptions = {
             from: process.env.EMAIL_LOGIN,
-            to: process.env.EMAIL_LOGIN,
+            to: "cblok@cblok.lv",
             subject: `URGENT | ${name} | ${email}`,
             text: `!!! Новая заявка !!!
             

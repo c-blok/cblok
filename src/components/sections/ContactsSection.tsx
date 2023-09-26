@@ -34,8 +34,8 @@ export const ContactsSection = ({ locale } : {locale: string}) => {
                                 <p className={style.field}>
                                     <EmailIcon />
                                     <span className={style.f}>
-                                        <a href={"mailto:cblok@inbox.lv"}>{t("email")}</a>
-                                        <a href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</a>
+                                        <a href={"mailto:cblok@cblok.lv"}>{t("email")}</a>
+                                        <a href={"mailto:cblok@cblok.lv"}>cblok@cblok.lv</a>
                                     </span>
                                 </p>
                                 <iframe width="97%" height="400" style={{border:0}} allowFullScreen={false}

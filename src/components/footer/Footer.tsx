@@ -54,7 +54,7 @@ export const Footer = () => {
                 <div className={style.text}>
                     <p><span>{t("b3.f")}</span></p>
                     <a href={"tel:+37120004922"}>+371 20004922</a>
-                    <a href={"mailto:cblok@inbox.lv"}>cblok@inbox.lv</a>
+                    <a href={"mailto:cblok@cblok.lv"}>cblok@cblok.lv</a>
                 </div>
             </div>
             <div className={style.centered}>
