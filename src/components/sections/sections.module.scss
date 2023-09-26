@@ -269,7 +269,7 @@ $titleHeight: 90px;
           &:hover.opened {
             .bg {
               .dark {
-                background-color: rgba(63,63,63,0.8) !important;
+                background-color: rgba(63,63,63,0.9) !important;
               }
             }
           }
@@ -290,7 +290,7 @@ $titleHeight: 90px;
           }
           .text {
             text-align: center;
-            font-size: 3.3vw;
+            font-size: 3.5vw;
           }
           img {
             @include fullHeight($titleHeight);
@@ -356,7 +356,6 @@ $titleHeight: 90px;
 
           path {
             &:last-of-type {
-              //transform: scale(1.5) translateX(-14%) translateY(-20%);
               animation: tap 2s infinite ease-in-out;
               @keyframes tap {
                 0% {
