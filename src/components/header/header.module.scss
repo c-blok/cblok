@@ -1,0 +1,152 @@
+@import "src/styles/global";
+
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: $headerHeight;
+  transition: background-color $transitionTime ease;
+
+  @media screen and (max-width: $small + 100) {
+    background-color: $headerColor;
+    height: $headerSmall;
+  }
+
+  .container {
+    margin: auto;
+    @include maxWrapper();
+    @include wrapper();
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    .logo {
+      @media screen and (max-width: $small + 100) {
+        //width: 25%;
+        svg {
+          width: 50px;
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+      height: 100%;
+
+      @media screen and (max-width: $small + 100) {
+        .links {
+          display: none;
+        }
+      }
+
+    }
+
+    .navigationMob {
+      display: none;
+      justify-content: center;
+      flex: 1;
+
+      button {
+        text-transform: uppercase !important;
+      }
+
+      @media screen and (max-width: $small + 100) {
+        display: flex;
+      }
+    }
+
+  }
+
+  .links {
+    justify-content: center;
+    flex: 1;
+    gap: 3%;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  a, button {
+    font-weight: 400;
+    font-size: 1.15em;
+    color: $bg;
+    transition: font-weight 1s ease;
+    &.active, &:hover {
+      font-weight: 800 !important;
+    }
+    &::after {
+      display: block;
+      content: attr(title);
+      font-weight: 800 !important;
+      height: 1px;
+      color: transparent;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  .lang {
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    transition: background-color $transitionTime ease;
+    @include wrapper();
+    margin-right: -30px;
+    gap: 20px;
+    height: 100%;
+    position: relative;
+    padding-left: 50px;
+
+    .bgLang {
+      position: absolute;
+      left: 100%;
+      height: 100%;
+      width: 3000%;
+      transition: background-color $transitionTime ease;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 1300px) {
+      padding-left: 30px;
+    }
+
+    @media screen and (max-width: $small + 100) {
+      background-color: $blockColor;
+    }
+  }
+
+  .mobNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: $headerColor;
+    top: $headerSmall;
+
+    .mobContainer {
+      @include maxWrapper();
+      @include wrapper();
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+
+      .links {
+        padding-top: 32px;
+        flex-direction: column;
+        gap: 15px;
+        li {
+          text-align: center;
+        }
+      }
+
+      padding-bottom: 32px;
+    }
+
+    @media screen and (max-width: $small + 100) {
+      display: block;
+    }
+  }
+}

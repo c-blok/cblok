@@ -1,0 +1,126 @@
+@import "src/styles/global";
+
+.footer {
+  margin-top: $headerHeight;
+  background-color: $gray;
+  font-style: normal;
+  line-height: normal;
+  color: $bg;
+  font-size: 0.8vw;
+  font-weight: 400;
+
+  @media screen and (max-width: $small + 100) {
+    margin-top: $headerSmall;
+  }
+
+  a {
+    &:hover {
+      transition: color $transitionTime;
+    }
+    svg {
+      path {
+        transition: fill $transitionTime;
+      }
+    }
+  }
+
+  .container {
+    @include maxWrapper();
+    @include wrapper();
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 10%;
+      svg {
+        width: 100%;
+      }
+      .socials {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        svg {
+          width: 100%;
+        }
+        a {
+          width: 25%;
+          &:hover {
+            svg {
+              path {
+                fill: $active;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      span {
+        font-weight: 500;
+      }
+    }
+    @media screen and (max-width: $small) {
+      padding-top: 40px;
+      flex-wrap: wrap;
+      gap: 32px;
+      font-size: 3vw;
+
+      .text, .logo {
+        width: 100%;
+      }
+      .logo {
+        max-width: 200px;
+        width: 40%;
+        gap: 16px;
+        order: 4;
+        svg {
+          width: 100%;
+          height: unset;
+        }
+      }
+      .text {
+        order: 1;
+        gap: 2vw;
+      }
+    }
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 400;
+    padding-bottom: 24px;
+    a {
+      &:hover {
+        color: $active;
+      }
+
+      &:last-of-type {
+        color: $active;
+      }
+    }
+    @media screen and (max-width: $small) {
+      font-size: 2.4vw;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      a {
+        &:last-of-type {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

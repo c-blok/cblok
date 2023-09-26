@@ -1,0 +1,87 @@
+{
+  "seo": {
+    "title": "C-BLOK | Būvniecība un remonts Rīgā, Latvijā",
+    "description": "C-BLOK - jūsu uzticamais partneris būvniecībā un remontā visā Latvijā. Mēs piedāvājam māju un ēku būvniecības, remonta un interjera dizaina pakalpojumus, kā arī citas remonta saistītās darbības. Sazinieties ar mums šodien, zvanot pa tālruni +371 20004922, lai iegūtu kvalitatīvus būvniecības risinājumus",
+    "keywords": "Būvniecība Rīgā, Remonta darbi Latvijā, Būvuzņēmums C-BLOK, Interjera dizains Rīgā, Ēku rekonstrukcija, Māju būvniecība, Profesionāli būvniecības pakalpojumi, Termiņu ievērošana, Kvalitatīvi materiāli"
+  },
+  "header": {
+    "home": "Galvenā",
+    "about": "Par mums",
+    "services": "Pakalpojumi",
+    "gallery": "Galerija",
+    "contacts": "Kontakti",
+    "mission": "Mūsu misija",
+    "menu": "izvēlne"
+  },
+  "home": {
+    "h1": "CONSTRUCTION COMPANY"
+  },
+  "about": {
+    "h2": "PAR MUMS",
+    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu celtniecības un remontdarbu klāstu.<br/><br/>Mēs nodarbojamies ar personīgo projektu veidošanu un visu dokumentāciju ņemam uz sevi.<br/><br/>Palīdzēsim salikt mēbeles, renovēt dzīvokļu interjerus, salikt moduļu mājas, renovēt, izbūvēt terases un mājas “zem atslēgas”.<br/><br/>Mūsu partneri un uzkrātā pieredze ļauj tikt galā laicīgi ar jebkuras sarežģītības objektu.",
+    "h3": "IEĶĪLĀJIET UZTICAMĪBAS BLOKU SAVĀ CELTNIECĪBĀ!",
+    "contactUs": "Sazināties ar mums",
+    "downloadTitle": "Lejupielādējiet prezentāciju par “C-BLOK”",
+    "downloadText": "Būvuzņēmuma “C-BLOK” prezentācija ietver informāciju par mūsu vērtībām, pieredzi, darba kvalitāti un mērķiem.",
+    "downloadButton": "Lejupielādēt PDF"
+  },
+  "services": {
+    "title": "Pakalpojumi",
+    "construction": {
+      "title": "Celtniecības darbi",
+      "text": "• Māju būvniecība<br/><br/>• Moduļu māju uzstādīšana<br/><br/>• Terases būvēšana<br/><br/>• Fundamenta darbi<br/><br/>• Saimniecības ēkas<br/><br/>• Jumta darbi<br/><br/>• Demontāža"
+    },
+    "repair": {
+      "title": "Remontdarbi",
+      "text": "• Dekoratīvais segums uz sienām<br/><br/>• Mēbeļu uzbūve<br/><br/>• Grīdu ieklāšana<br/><br/>• Sienu krāsošana<br/><br/>• Tapešu līmēšana<br/><br/>• Biroja telpas renovācija<br/><br/>• Fasādes darbi"
+    },
+    "other": {
+      "title": "Papildus pakalpojumi",
+      "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana (speciālisti, tehnikas meklēšana utt.)<br/><br/>• Mantu pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Apkures sistēmas, katli<br/><br/>• Mēbeļu izgatavošana"
+    },
+    "downloadTitle": "“C-BLOK” visu pakalpojumu saraksts",
+    "downloadText": "Dokuments satur visu pakalpojumu klāstu, ko sniedz uzņēmums “C-BLOK”. Mūsu pieredzējušo speciālistu komanda ir gatava īstenot jebkuras sarežģītības projektus.",
+    "h5": "NO IDEJAS LĪDZ BRĪDIM “IETEICA C-BLOK VISIEM KAM VARĒJA”"
+  },
+  "mission": {
+    "title": "MŪSU MISIJA",
+    "text": "Mēs esam kompānija “C-BLOK” - Jūsu uzticamais partneris celtniecības un remonta darbos!<br/><br/>Mūsu uzdevums ir pārvērst parastās dzīvojamās telpas par modernām un darbam un dzīvei ergonomiskām telpām. No pašiem mazākajiem līdz lieliem projektiem.<br/><br/>“C-BLOK” palīdz realizēt klientu sapņus realitātē, ar mūsu celtniecības brigādes drošām rokām! Mēs esam lepni, ka mūsu komanda ir tik daudzveidīga, ka var izpildīt jebkuras gaumes pieprasījumu!<br/><br/>Mūsu uzdevums: izgatavot objektus tā, lai tie atspoguļotu mūsu klientu idejas un personīgo zīmolu vislabākajā veidā.<br/><br/>Mēs apvienojam intonatīvas idejas ar praktiskiem risinājumiem, lai radītu dzīvei un darbam piemērojamas telpas.<br/><br/>Turklāt kompānijas “C-BLOK” vadītājs rūpējas gan par klienta komfortu, gan saviem darbiniekiem, lai visiem būtu prieks strādāt ar mūsu kompāniju!"
+  },
+  "gallery": {
+    "title": "MŪSU OBJEKTU GALERIJA"
+  },
+  "contacts": {
+    "title": "MŪSU KONTAKTI",
+    "h3": "Kā mūms atrast?",
+    "pCom": "SIA “C-BLOK”",
+    "phone": "Tālrunis",
+    "email": "E-mail",
+    "form": {
+      "h4": "Izsauс mūsu speciālistu un saņem konsultāciju!",
+      "p": "*Lūdzu, aizpildiet zemāk esošo veidlapu, un kāds no mūsu pārstāvjiem tuvākajā laikā ar Jums sazināsies",
+      "name": "Vārds*",
+      "email": "E-pasts*",
+      "phone": "Telefons*",
+      "time": "Laiks, kurā Jums būs ērti, lai mēs ar Jums sazinājamies:",
+      "send": "SUTĪT",
+      "error": "KĻŪDA",
+      "success": "NOSŪTĪTS"
+    }
+  },
+  "footer": {
+    "b1": {
+      "f": "SIA “C-BLOK”",
+      "s": "Reģ num.: 40203207255",
+      "t": "PVN num.: LV40203207255"
+    },
+    "b2": {
+      "f": "Maksājumiem:",
+      "s": "LV17HABA0551046589005",
+      "t": "A/S Swedbank: HABALV22"
+    },
+    "b3": {
+      "f": "Kontaktinformācija:"
+    },
+    "vebi": "Mājas lapu izstrādāja VEBI.lv"
+  }
+}
