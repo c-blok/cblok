@@ -62,6 +62,7 @@ export const Footer = () => {
                 <a href={"https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations_en"} target={"_blank"}>
                     Cookie Policy
                 </a>
+                <a href="https://vebi.lv/">Сайт разработан VEBI.lv</a>
             </div>
         </footer>
     )

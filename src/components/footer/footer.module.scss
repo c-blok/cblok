@@ -106,9 +106,21 @@
       &:hover {
         color: $active;
       }
+
+      &:last-of-type {
+        color: $active;
+      }
     }
     @media screen and (max-width: $small) {
       font-size: 2.4vw;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      a {
+        &:last-of-type {
+          width: 100%;
+          text-align: center;
+        }
+      }
     }
   }
 }
