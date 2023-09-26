@@ -89,7 +89,7 @@ export const Header = ({locale} : {locale: string}) => {
                         <li><Link className={activeSection === "contacts" ? style.active : ""} title={t("contacts")} href={"/#contacts"}>{t("contacts")}</Link></li>
                     </ul>
                     <div className={style.navigationMob}>
-                        <button onClick={() => setIsOpened(!isOpened)}>izvēlne</button>
+                        <button onClick={() => setIsOpened(!isOpened)}>{t("menu")}</button>
                     </div>
                     <ul className={style.lang} ref={langRef}>
                         <li><Link title="LV" className={locale === "lv" ? style.active : ""} href={"/"} locale={"lv"}>LV</Link></li>
