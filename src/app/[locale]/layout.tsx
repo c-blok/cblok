@@ -20,7 +20,7 @@ export async function generateMetadata({params}: {params: { locale: string }}): 
 
 
   return {
-    metadataBase: new URL('https://cblock.lv'),
+    metadataBase: new URL('https://www.cblok.lv'),
     title: {
       default: t('title'),
       template: `%s | ${t('title')}`,
