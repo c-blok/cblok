@@ -24,7 +24,7 @@ export const ServicesSection = ({ locale } : {locale: string}) => {
             <div className={style.mobContainer}>
                 <ServicesMobSlider />
             </div>
-            <DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} h5={t("h5")} />
+            {/*<DownloadBlock h4={t("downloadTitle")} text={t("downloadText")} locale={locale} h5={t("h5")} />*/}
         </section>
     )
 }
