@@ -18,8 +18,8 @@
   },
   "about": {
     "h2": "PAR MUMS",
-    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu celtniecības un remontdarbu klāstu.<br/><br/>Mēs nodarbojamies ar personīgo projektu veidošanu un visu dokumentāciju ņemam uz sevi.<br/><br/>Palīdzēsim salikt mēbeles, renovēt dzīvokļu interjerus, salikt moduļu mājas, renovēt, izbūvēt terases un mājas “zem atslēgas”.<br/><br/>Mūsu partneri un uzkrātā pieredze ļauj tikt galā laicīgi ar jebkuras sarežģītības objektu.",
-    "h3": "IEĶĪLĀJIET UZTICAMĪBAS BLOKU SAVĀ CELTNIECĪBĀ!",
+    "text": "Mūsu uzņēmums \"C-BLOK\" nodrošina pilnu būvniecības un remontdarbu klāstu.<br/><br/>Mēs piedāvājam personīgo projektu izstrādi un pārņemam atbildību par dokumentācijas prasībām.<br/><br/>Palīdzēsim ar mēbeļu montāžu, dzīvokļu interjeru atjaunošanu, moduļu māju montāžu, renovāciju, terašu izbūvi. Mēs esam gatavi palīdzēt ar pilna apjoma mājas būvniecību.<br/><br/>Mūsu partneri un iegūtā pieredze ļauj mums veiksmīgi īstenot jebkura sarežģītības objektus noteiktajā termiņā.",
+    "h3": "IELIECIET UZTICAMĪBAS PAMATU SAVĀ BŪVNIECĪBĀ!",
     "contactUs": "Sazināties ar mums",
     "downloadTitle": "Lejupielādējiet prezentāciju par “C-BLOK”",
     "downloadText": "Būvuzņēmuma “C-BLOK” prezentācija ietver informāciju par mūsu vērtībām, pieredzi, darba kvalitāti un mērķiem.",
@@ -29,15 +29,15 @@
     "title": "Pakalpojumi",
     "construction": {
       "title": "Celtniecības darbi",
-      "text": "• Māju būvniecība<br/><br/>• Moduļu māju uzstādīšana<br/><br/>• Terases būvēšana<br/><br/>• Fundamenta darbi<br/><br/>• Saimniecības ēkas<br/><br/>• Jumta darbi<br/><br/>• Demontāža"
+      "text": "• Māju būvniecība<br/><br/>• Moduļu māju montāža<br/><br/>• Terases būvniecība<br/><br/>• Mūrēšanas, pamatu darbi<br/><br/>• Saimnieciskie ēku būvniecības darbi<br/><br/>• Jumtu darbi<br/><br/>• Demontāža"
     },
     "repair": {
       "title": "Remontdarbi",
-      "text": "• Dekoratīvais segums uz sienām<br/><br/>• Mēbeļu uzbūve<br/><br/>• Grīdu ieklāšana<br/><br/>• Sienu krāsošana<br/><br/>• Tapešu līmēšana<br/><br/>• Biroja telpas renovācija<br/><br/>• Fasādes darbi"
+      "text": "• Sienas dekoratīvais apdares materiāls<br/><br/>• Mēbeļu montāža<br/><br/>• Grīdu uzlikšana<br/><br/>• Sienas krāsošana<br/><br/>• Tapetes līmēšana<br/><br/>• Biroju renovācija<br/><br/>• Fasādes darbi"
     },
     "other": {
       "title": "Papildus pakalpojumi",
-      "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana (speciālisti, tehnikas meklēšana utt.)<br/><br/>• Mantu pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Apkures sistēmas, katli<br/><br/>• Mēbeļu izgatavošana"
+      "text": "• Projekta izveide<br/><br/>• Darba procesu organizēšana uz objekta (speciālistu, tehnikas u.c. meklēšana)<br/><br/>• Kravas pārvadāšanas pakalpojumi<br/><br/>• Atkritumu izvešana<br/><br/>• Durvju, logu, žalūziju uzstādīšana<br/><br/>• Sildīšanas sistēmas un katli<br/><br/>• Mēbeļu izgatavošana"
     },
     "downloadTitle": "“C-BLOK” visu pakalpojumu saraksts",
     "downloadText": "Dokuments satur visu pakalpojumu klāstu, ko sniedz uzņēmums “C-BLOK”. Mūsu pieredzējušo speciālistu komanda ir gatava īstenot jebkuras sarežģītības projektus.",
@@ -52,7 +52,7 @@
   },
   "contacts": {
     "title": "MŪSU KONTAKTI",
-    "h3": "Kā mūms atrast?",
+    "h3": "Mēs gaidām jūsu zvanu un vienmēr esam gatavi palīdzēt!",
     "pCom": "SIA “C-BLOK”",
     "phone": "Tālrunis",
     "email": "E-mail",
