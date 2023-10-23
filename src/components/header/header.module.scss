@@ -49,6 +49,10 @@
       display: none;
       justify-content: center;
       flex: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
 
       button {
         text-transform: uppercase !important;
@@ -56,6 +60,13 @@
 
       @media screen and (max-width: $small + 100) {
         display: flex;
+      }
+
+      @media screen and (max-width: 330px) {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
       }
     }
 
