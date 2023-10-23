@@ -1,10 +1,12 @@
 import style from '../sections.module.scss';
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { DownloadIcon, PDFIcon, PhoneIcon } from "../../../assets/icons/index";
+import Link from "next/link";
 
 export const DownloadBlock = ({ h4, text, locale, h5 } : {h4: string, text: string, locale: string, h5?: string}) => {
 
     const t = useTranslations('about');
+    const lang = useLocale();
 
     return (
         <div className={style.downloadBlock}>
@@ -19,10 +21,10 @@ export const DownloadBlock = ({ h4, text, locale, h5 } : {h4: string, text: stri
                         <h5>{h5}</h5>
                     }
                 </div>
-                <button className={style.button}>
+                <Link href={`/C-BLOK-${lang}.pdf`} target={"_blank"} className={style.button}>
                     <DownloadIcon />
                     {t("downloadButton")}
-                </button>
+                </Link>
             </div>
         </div>
     )
