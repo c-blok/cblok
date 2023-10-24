@@ -423,16 +423,16 @@ $titleHeight: 90px;
     }
   }
 
-  &.mission {
-      @media screen and (max-width: $small) {
-        .text {
-          order: 2;
-        }
-        .image {
-          order: 1;
-        }
-      }
-  }
+  //&.mission {
+      //@media screen and (max-width: $small) {
+      //  .text {
+      //    order: 2;
+      //  }
+      //  .image {
+      //    order: 1;
+      //  }
+      //}
+  //}
 
   &.partners {
     padding-top: 0;
